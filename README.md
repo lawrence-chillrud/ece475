@@ -50,7 +50,7 @@ There are many tools for converting `.dcm` -> `.nii.gz`; the software we choose 
 2. 
 -->
 
-We convert all CT scans and segmentations to `.nii.gz` files by running the `convert_dicoms.py` script, which utilizes `dcm2niix` under the hood.
+We convert all CT scans and segmentations to `.nii.gz` files by running the `convert_dcms.py` script, which utilizes `dcm2niix` under the hood.
 
 ## 5. Feature extraction
 
