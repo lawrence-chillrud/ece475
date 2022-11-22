@@ -10,18 +10,11 @@
 import os
 import pandas as pd
 from datetime import datetime
-from utils import print_prog_bar
+from utils import print_prog_bar, set_wd
 
 # 1. Set working directory to ece475/ if that isn't it already
-cwd = os.getcwd().split('/')
-try:
-    while cwd.pop() != 'ece475':
-        os.chdir('..')
-except IndexError: 
-    print("Error: This script must be run from somewhere inside the ece475/ dir.")
-    exit()
 print("Running convert_dcms.py...")
-print("Set working directory to:", os.getcwd())
+set_wd()
 
 # 2. Read relevant .csv files
 tcia_dir = 'data/TCIA/manifest/'
