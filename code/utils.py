@@ -22,3 +22,9 @@ def set_wd():
         print("Error: This script must be run from somewhere inside the ece475/ dir.")
         exit()
     print("Set working directory to:", os.getcwd())
+
+def str_dict(d):
+    s = ''
+    for k in d.keys():
+        s += '\t' + str(k) + ': ' + str(d[k]) + '\n'
+    return s

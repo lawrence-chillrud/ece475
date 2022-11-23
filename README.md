@@ -13,7 +13,7 @@ Table of contents:
 
 ## 1. Requirements
 
-The dependencies needed to run all code in this repository are listed in the `requirements.txt` file. We also provide the `environment.yml` YAML file for easy cloning of the exact conda virtual environment used to run all project scripts. With [conda](https://conda.io/projects/conda/en/latest/user-guide/install/download.html) installed, simply run:
+We also provide the `environment.yml` YAML file for easy cloning of the exact conda virtual environment used to run all project scripts. With [conda](https://conda.io/projects/conda/en/latest/user-guide/install/download.html) installed, simply run the following line in `ece475` directory:
 
 ```conda env create --file environment.yml```
 
@@ -62,7 +62,7 @@ Now that we have downloaded the data and converted it into the appropriate forma
     ```pip install pyradiomics```
 -->
 
-We extract radiomic features from the `.nii.gz` files by running the `extract_features.py` script. This should output the file `ee475_data.csv`, which can be used for downstream ML tasks.
+We extract radiomic features from the `.nii.gz` files by running the `extract_features.py` script. This should output the file `NSCLC_features.csv`, which can be used for downstream ML tasks.
 
 ## References
 
