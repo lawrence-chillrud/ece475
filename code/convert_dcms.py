@@ -26,7 +26,7 @@ segs_md = md.loc[md['Modality'] == 'SEG', ['Subject ID', 'Study Description', 'M
 segs_fs = segs_md['File Location']
 
 # 4. Convert all .dcms with a valid segmentation...
-log_file = 'data/generated/NIfTI_log.txt'
+log_file = 'data/generated/NIfTI/convert_dcms_log.txt'
 os.system(f"echo '' > {log_file}")
 n = len(segs_fs)
 print(f"Logging output to {log_file}")

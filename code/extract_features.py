@@ -25,7 +25,7 @@ data_dir = 'data/generated/'
 df = pd.read_csv(data_dir + 'NSCLC_labels.csv')
 
 # %%3. Set up MY logging file
-log_path = data_dir + 'NSCLC_features_README.txt'
+log_path = data_dir + 'feature_logs/NSCLC_features_README.txt'
 output_path = data_dir + 'NSCLC_features.csv'
 print(f"Logging output to {log_path}")
 log_file = open(log_path, 'w')
@@ -33,7 +33,8 @@ log_file.write(("-"*80) + "\n\nREADME / log file for extract_features.py run fro
 log_file.write("\nSee " + output_path + "for resulting features.\n\n" + ("-"*80) + "\n\n")
 
 # %%4. Set up radiomics' logging file
-rad_log_path = data_dir + 'radiomics_log.txt'
+radiomics.setVerbosity(level=60)
+rad_log_path = data_dir + 'feature_logs/radiomics_log.txt'
 handler = logging.FileHandler(rad_log_path, 'w')
 formatter = logging.Formatter("%(levelname)s:%(name)s: %(message)s")
 handler.setFormatter(formatter)
@@ -52,7 +53,7 @@ log_file.write(("-"*80) + "\n\n")
 studies = df['Case ID'].values
 normal_studies = [len(glob(data_dir + 'NIfTI/' + s + '/*.nii.gz')) == 2 for s in studies]
 weird_studies = [not s for s in normal_studies]
-log_file.write(f"Dropped {studies[weird_studies]} from dataset since they had an unexpected number of .nii.gz files.\n\n")
+log_file.write(f"Dropped {studies[weird_studies]} from dataset, unexpected num of .nii.gz files.\n\n")
 studies = studies[normal_studies]
 n = len(studies)
 

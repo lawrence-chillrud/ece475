@@ -13,7 +13,7 @@ Table of contents:
 
 ## 1. Requirements
 
-We also provide the `environment.yml` YAML file for easy cloning of the exact conda virtual environment used to run all project scripts. With [conda](https://conda.io/projects/conda/en/latest/user-guide/install/download.html) installed, simply run the following line in `ece475` directory:
+We provide the `environment.yml` YAML file for easy cloning of the exact conda virtual environment used to run all project scripts. With [conda](https://conda.io/projects/conda/en/latest/user-guide/install/download.html) installed, simply run the following line in `ece475` directory:
 
 ```conda env create --file environment.yml```
 
