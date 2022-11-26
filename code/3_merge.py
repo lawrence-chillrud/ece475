@@ -19,5 +19,8 @@ dfl = pd.read_csv(data_dir + 'NSCLC_labels.csv')
 # 3. Merge data by Case ID
 df = pd.merge(dff, dfl, on = 'Case ID')
 
-# 4. Print summary mutation stats:
-print(df['EGFR mutation status'].value_counts())
+# 4. Print summary mutation stats
+print(df['EGFR mutation status'].value_counts(), '\n')
+print(df['KRAS mutation status'].value_counts(), '\n')
+print(df['ALK translocation status'].value_counts(), '\n')
+print(df['Histopathological Grade'].value_counts(), '\n')
