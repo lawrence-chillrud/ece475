@@ -32,10 +32,12 @@ The dataset we are using is The Cancer Imaging Archive's (TCIA)[^1] publicly ava
 We refer interested readers to Bakr et al.[^2] for further details regarding the dataset.
 
 ## 3. Downloading the data
-1. Download [the .tcia manifest file](https://wiki.cancerimagingarchive.net/download/attachments/28672347/NSCLC_Radiogenomics-6-1-21%20Version%204.tcia?version=1&modificationDate=1622561925765&api=v2) (88 KB) that will be needed to later retrieve the images and their segmentations from the NCBI Data Retriever (see steps 3 and 4).
-2. Download [the .csv file](https://wiki.cancerimagingarchive.net/download/attachments/28672347/NSCLCR01Radiogenomic_DATA_LABELS_2018-05-22_1500-shifted.csv?version=1&modificationDate=1531967714295&api=v2) (67 KB) providing the clinical data obtained for each patient (including each patient's EGFR mutation status).
+1. Download [the .tcia manifest file](https://wiki.cancerimagingarchive.net/download/attachments/28672347/NSCLC_Radiogenomics-6-1-21%20Version%204.tcia?version=1&modificationDate=1622561925765&api=v2) (88 KB) that will be needed to later retrieve the images and their segmentations from the NCBI Data Retriever (see steps 3 and 4). We include this `.tcia` file here in the [data/TCIA/](data/TCIA/) folder incase the download link changes in the future.
+2. Download [the .csv file](https://wiki.cancerimagingarchive.net/download/attachments/28672347/NSCLCR01Radiogenomic_DATA_LABELS_2018-05-22_1500-shifted.csv?version=1&modificationDate=1531967714295&api=v2) (67 KB) providing the clinical data obtained for each patient (including each patient's EGFR mutation status). Again, we include this `.csv` here in the [data/TCIA/manifest/](data/TCIA/manifest/) folder (with the infix `DATA_LABELS`) should the download link change in the future. (Note: this clinical data `.csv` file is different from the `metadata.csv` file we also include in the same folder. The `metadata.csv` file can be obtained from scratch by following step 4 below.)
 3. Follow [these instructions](https://wiki.cancerimagingarchive.net/display/NBIA/Downloading+TCIA+Images#DownloadingTCIAImages-InstallingtheNBIADataRetriever) to install the NCBI Data Retriever application.
 4. Now open the `.tcia` manifest file downloaded in step 1 (this will open the NCBI app installed in step 3). Follow the app's prompts to download all the images and their segmentations (97.6 GB total). They will be downloaded in `.dcm` DICOM format. Detailed instructions can be found [here](https://wiki.cancerimagingarchive.net/display/NBIA/Downloading+TCIA+Images#DownloadingTCIAImages-OpeningtheManifestFileandDownloadingtheData).
+
+_Note: Because we provide all the `.csv` files needed throughout the main ML analysis in the [data/generated/](data/generated/) directory, the interested reader need only follow the above steps to download the raw DICOM files if they want to perform the conversion (section 4 below) and feature extraction (section 5 below) themselves. Otherwise, sections 3-5 in this README need not be followed computationally, and just serve as documentation for how the analysis data was prepared. The relevant files for the main analysis are [NSCLC_labels.csv](data/generated/NSCLC_labels.csv) (output by section 4) and [NSCLC_features.csv](data/generated/NSCLC_features.csv) (output by section 5)._
 
 ## 4. Converting the data
 In order to make the data smaller and easier to work with, we must convert all downloaded CT scans and their accompanying segmentations from their raw DICOM `.dcm` format to a compressed NIfTI `.nii.gz` format. Interested readers can study [this useful DICOM and NIfTI Primer post](https://github.com/DataCurationNetwork/data-primers/blob/master/Neuroimaging%20DICOM%20and%20NIfTI%20Data%20Curation%20Primer/neuroimaging-dicom-and-nifti-data-curation-primer.md) for the differences between the two file types.
@@ -50,7 +52,7 @@ There are many tools for converting `.dcm` -> `.nii.gz`; the software we choose 
 2. 
 -->
 
-We convert all CT scans and segmentations to `.nii.gz` files by running the `1_convert_dcms.py` script, which utilizes `dcm2niix` under the hood.
+We convert all CT scans and segmentations to `.nii.gz` files by running the [1_convert_dcms.py](code/1_convert_dcms.py) script, which utilizes `dcm2niix` under the hood. This script also outputs the [NSCLC_labels.csv](data/generated/NSCLC_labels.csv) file.
 
 ## 5. Feature extraction
 
@@ -62,7 +64,7 @@ Now that we have downloaded the data and converted it into the appropriate forma
     ```pip install pyradiomics```
 -->
 
-We extract radiomic features from the `.nii.gz` files by running the `2_extract_features.py` script. This should output the file `NSCLC_features.csv`, which can be used for downstream ML tasks.
+We extract radiomic features from the `.nii.gz` files by running the [2_extract_features.py](code/2_extract_features.py) script. This script outputs the [NSCLC_features.csv](data/generated/NSCLC_features.csv), which (together with [NSCLC_labels.csv](data/generated/NSCLC_labels.csv)) can be used for downstream ML tasks.
 
 ## References
 
