@@ -50,7 +50,7 @@ There are many tools for converting `.dcm` -> `.nii.gz`; the software we choose 
 2. 
 -->
 
-We convert all CT scans and segmentations to `.nii.gz` files by running the `convert_dcms.py` script, which utilizes `dcm2niix` under the hood.
+We convert all CT scans and segmentations to `.nii.gz` files by running the `1_convert_dcms.py` script, which utilizes `dcm2niix` under the hood.
 
 ## 5. Feature extraction
 
@@ -62,7 +62,7 @@ Now that we have downloaded the data and converted it into the appropriate forma
     ```pip install pyradiomics```
 -->
 
-We extract radiomic features from the `.nii.gz` files by running the `extract_features.py` script. This should output the file `NSCLC_features.csv`, which can be used for downstream ML tasks.
+We extract radiomic features from the `.nii.gz` files by running the `2_extract_features.py` script. This should output the file `NSCLC_features.csv`, which can be used for downstream ML tasks.
 
 ## References
 

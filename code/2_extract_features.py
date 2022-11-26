@@ -1,9 +1,12 @@
-# File: extract_features.py
+# File: 2_extract_features.py
 # Author: Lawrence Chillrud <chili@u.northwestern.edu>
 # Date: 11/21/2022
 # Description: From the .nii.gz files in the data/generated folder, this script
 # extracts radiomic features of interest from CT scans & their segmentations
-# using the pyradiomics package. NOTE: Cases R01-059 and R01-119 are weird...
+# using the pyradiomics package. 
+# Note 1: Cases R01-059 and R01-119 are weird...
+# Note 2: Set correctMask=True in init of featureextractor fixes geometry issue
+# Note 3: It's assumed this script is run from somewhere within the ece475/ dir
 
 # %%0. Package imports 
 import os
@@ -41,7 +44,7 @@ handler.setFormatter(formatter)
 radiomics.logger.addHandler(handler)
 
 # %%5. Setting up pyradiomics feature extractor
-extractor = featureextractor.RadiomicsFeatureExtractor()
+extractor = featureextractor.RadiomicsFeatureExtractor(correctMask=True)
 extractor.enableAllImageTypes()
 log_file.write("Pyradiomics extractor used:\n\n")
 log_file.write("Settings:\n" + str_dict(extractor.settings) + "\n")

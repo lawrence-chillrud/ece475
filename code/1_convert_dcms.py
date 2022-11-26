@@ -1,10 +1,10 @@
-# File: convert_dcms.py
+# File: 1_convert_dcms.py
 # Author: Lawrence Chillrud <chili@u.northwestern.edu>
 # Date: 11/21/2022
 # Description: this file converts both the CT and SEG .dcm (DICOM) files 
 # downloaded from TCIA's Radiogenics dataset to .nii.gz (NIfTI) format.
 # Note: It's assumed this script is run from somewhere within the ece475/ dir.
-# It's also assumed the .dcm data is formatted as downloaded from TCIA
+# It's also assumed the .dcm data is formatted as downloaded from TCIA.
 
 # %%0. Package imports
 import os
