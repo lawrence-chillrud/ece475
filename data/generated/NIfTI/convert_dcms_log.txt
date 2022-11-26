@@ -1,0 +1,1613 @@
+
+
+Converting R01-001
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 305 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-001/3D_Slicer_segmentation_result (512x512x304x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-001/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 304 DICOM as data/generated/NIfTI/R01-001/THORAX_1.0_B45f (512x512x304x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-001/THORAX_1.0_B45f.nii"
+Conversion required 7.230372 seconds (1.575821 for core code).
+
+Converting R01-002
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 270 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-002/3D_Slicer_segmentation_result (512x512x269x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-002/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 269 DICOM as data/generated/NIfTI/R01-002/CHEST_1.25_MM (512x512x269x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-002/CHEST_1.25_MM.nii"
+Conversion required 5.149967 seconds (1.455748 for core code).
+
+Converting R01-003
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 289 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-003/3D_Slicer_segmentation_result (512x512x288x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-003/3D_Slicer_segmentation_result.nii"
+Convert 288 DICOM as data/generated/NIfTI/R01-003/THIN_LUNG_WINDOW (512x512x288x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-003/THIN_LUNG_WINDOW.nii"
+Conversion required 7.999811 seconds (1.501498 for core code).
+
+Converting R01-004
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 277 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-004/3D_Slicer_segmentation_result (512x512x276x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-004/3D_Slicer_segmentation_result.nii"
+Convert 276 DICOM as data/generated/NIfTI/R01-004/THIN_LUNG_WINDOW (512x512x276x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-004/THIN_LUNG_WINDOW.nii"
+Conversion required 7.204559 seconds (1.396850 for core code).
+
+Converting R01-005
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 330 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-005/3D_Slicer_segmentation_result (512x512x329x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-005/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 329 DICOM as data/generated/NIfTI/R01-005/Thorax_1.0_B45f (512x512x329x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-005/Thorax_1.0_B45f.nii"
+Conversion required 8.483155 seconds (1.750661 for core code).
+
+Converting R01-006
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 568 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-006/3D_Slicer_segmentation_result (512x512x567x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-006/3D_Slicer_segmentation_result.nii"
+Convert 567 DICOM as data/generated/NIfTI/R01-006/_625_mm_Chest (512x512x567x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-006/_625_mm_Chest.nii"
+Conversion required 10.282495 seconds (2.900294 for core code).
+
+Converting R01-007
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 319 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-007/3D_Slicer_segmentation_result (512x512x318x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-007/3D_Slicer_segmentation_result.nii"
+Convert 318 DICOM as data/generated/NIfTI/R01-007/THIN_LUNG_WINDOW (512x512x318x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-007/THIN_LUNG_WINDOW.nii"
+Conversion required 17.281526 seconds (1.695953 for core code).
+
+Converting R01-008
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 200 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-008/3D_Slicer_segmentation_result (512x512x19x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-008/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 199 DICOM as data/generated/NIfTI/R01-008/LUNG (512x512x199x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-008/LUNG.nii"
+Conversion required 6.076773 seconds (0.874978 for core code).
+
+Converting R01-010
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 302 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-010/3D_Slicer_segmentation_result (512x512x301x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-010/3D_Slicer_segmentation_result.nii"
+Convert 301 DICOM as data/generated/NIfTI/R01-010/THINS (512x512x301x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-010/THINS.nii"
+Conversion required 6.215845 seconds (1.780150 for core code).
+
+Converting R01-011
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 242 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-011/3D_Slicer_segmentation_result (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-011/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 241 DICOM as data/generated/NIfTI/R01-011/Recon_2_CHEST (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-011/Recon_2_CHEST.nii"
+Conversion required 8.103680 seconds (1.207464 for core code).
+
+Converting R01-012
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 374 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-012/3D_Slicer_segmentation_result (512x512x373x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-012/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 373 DICOM as data/generated/NIfTI/R01-012/Thorax_1.0_B45f (512x512x373x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-012/Thorax_1.0_B45f.nii"
+Conversion required 9.550402 seconds (2.003797 for core code).
+
+Converting R01-013
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 302 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-013/3D_Slicer_segmentation_result (512x512x301x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-013/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 301 DICOM as data/generated/NIfTI/R01-013/Thorax_1.0_B45f (512x512x301x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-013/Thorax_1.0_B45f.nii"
+Conversion required 6.286497 seconds (1.551697 for core code).
+
+Converting R01-014
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 266 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-014/3D_Slicer_segmentation_result (512x512x265x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-014/3D_Slicer_segmentation_result.nii"
+Convert 265 DICOM as data/generated/NIfTI/R01-014/Recon_2_CHEST (512x512x265x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-014/Recon_2_CHEST.nii"
+Conversion required 5.863837 seconds (1.382965 for core code).
+
+Converting R01-016
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 278 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-016/3D_Slicer_segmentation_result (512x512x277x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-016/3D_Slicer_segmentation_result.nii"
+Convert 277 DICOM as data/generated/NIfTI/R01-016/Recon_3_CT_CHEST_W_O (512x512x277x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-016/Recon_3_CT_CHEST_W_O.nii"
+Conversion required 5.428135 seconds (1.528072 for core code).
+
+Converting R01-015
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 590 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-015/3D_Slicer_segmentation_result (512x512x589x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-015/3D_Slicer_segmentation_result.nii"
+Convert 589 DICOM as data/generated/NIfTI/R01-015/_625_mm_Chest (512x512x589x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-015/_625_mm_Chest.nii"
+Conversion required 10.079298 seconds (2.953522 for core code).
+
+Converting R01-017
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 229 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-017/3D_Slicer_segmentation_result (512x512x228x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-017/3D_Slicer_segmentation_result.nii"
+Convert 228 DICOM as data/generated/NIfTI/R01-017/CHEST_1.25_MM (512x512x228x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-017/CHEST_1.25_MM.nii"
+Conversion required 8.567988 seconds (1.217601 for core code).
+
+Converting R01-018
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 581 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-018/3D_Slicer_segmentation_result (512x512x580x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-018/3D_Slicer_segmentation_result.nii"
+Convert 580 DICOM as data/generated/NIfTI/R01-018/_625_mm_Chest (512x512x580x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-018/_625_mm_Chest.nii"
+Conversion required 9.830821 seconds (2.791228 for core code).
+
+Converting R01-019
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 274 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-019/3D_Slicer_segmentation_result (512x512x273x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-019/3D_Slicer_segmentation_result.nii"
+Convert 273 DICOM as data/generated/NIfTI/R01-019/THINS (512x512x273x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-019/THINS.nii"
+Conversion required 4.702339 seconds (1.425855 for core code).
+
+Converting R01-020
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 130 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-020/3D_Slicer_segmentation_result (512x512x129x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-020/3D_Slicer_segmentation_result.nii"
+Convert 129 DICOM as data/generated/NIfTI/R01-020/2.5MM_AXIAL_LUNG_WINDOW (512x512x129x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-020/2.5MM_AXIAL_LUNG_WINDOW.nii"
+Conversion required 3.534073 seconds (0.678622 for core code).
+
+Converting R01-021
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 315 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-021/3D_Slicer_segmentation_result (512x512x314x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-021/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 314 DICOM as data/generated/NIfTI/R01-021/Thorax_1.0_B45f (512x512x314x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-021/Thorax_1.0_B45f.nii"
+Conversion required 8.121001 seconds (1.690966 for core code).
+
+Converting R01-022
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 236 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-022/3D_Slicer_segmentation_result (512x512x22x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-022/3D_Slicer_segmentation_result.nii"
+Convert 235 DICOM as data/generated/NIfTI/R01-022/Recon_3_CT_CHEST_W_O (512x512x235x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-022/Recon_3_CT_CHEST_W_O.nii"
+Conversion required 5.375012 seconds (0.919282 for core code).
+
+Converting R01-023
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 484 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-023/3D_Slicer_segmentation_result (512x512x69x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-023/3D_Slicer_segmentation_result.nii"
+Convert 483 DICOM as data/generated/NIfTI/R01-023/0.625_DMPR_On_+_SS50 (512x512x483x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-023/0.625_DMPR_On_+_SS50.nii"
+Conversion required 7.094392 seconds (1.750045 for core code).
+
+Converting R01-024
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 532 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-024/3D_Slicer_segmentation_result (512x512x531x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-024/3D_Slicer_segmentation_result.nii"
+Convert 531 DICOM as data/generated/NIfTI/R01-024/_625_mm_Chest (512x512x531x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-024/_625_mm_Chest.nii"
+Conversion required 11.376397 seconds (2.614660 for core code).
+
+Converting R01-025
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 566 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-025/3D_Slicer_segmentation_result (512x512x565x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-025/3D_Slicer_segmentation_result.nii"
+Convert 565 DICOM as data/generated/NIfTI/R01-025/_625_mm_Chest (512x512x565x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-025/_625_mm_Chest.nii"
+Conversion required 9.033241 seconds (2.763961 for core code).
+
+Converting R01-026
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 377 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-026/3D_Slicer_segmentation_result (512x512x19x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-026/3D_Slicer_segmentation_result.nii"
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Convert 376 DICOM as data/generated/NIfTI/R01-026/Recon_2_CAP (512x512x376x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-026/Recon_2_CAP.nii"
+Conversion required 8.326456 seconds (1.401059 for core code).
+
+Converting R01-027
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 228 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-027/3D_Slicer_segmentation_result (512x512x227x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-027/3D_Slicer_segmentation_result.nii"
+Convert 227 DICOM as data/generated/NIfTI/R01-027/THIN_LUNG_WINDOW (512x512x227x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-027/THIN_LUNG_WINDOW.nii"
+Conversion required 9.168014 seconds (1.214469 for core code).
+
+Converting R01-028
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 265 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-028/3D_Slicer_segmentation_result (512x512x264x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-028/3D_Slicer_segmentation_result.nii"
+Convert 264 DICOM as data/generated/NIfTI/R01-028/THIN_LUNG_WINDOW (512x512x264x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-028/THIN_LUNG_WINDOW.nii"
+Conversion required 10.367761 seconds (1.452216 for core code).
+
+Converting R01-029
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 252 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-029/3D_Slicer_segmentation_result (512x512x251x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-029/3D_Slicer_segmentation_result.nii"
+Convert 251 DICOM as data/generated/NIfTI/R01-029/1.25MM_CHEST_BONE (512x512x251x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-029/1.25MM_CHEST_BONE.nii"
+Conversion required 6.405689 seconds (1.323297 for core code).
+
+Converting R01-030
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 256 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-030/3D_Slicer_segmentation_result (512x512x255x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-030/3D_Slicer_segmentation_result.nii"
+Convert 255 DICOM as data/generated/NIfTI/R01-030/THIN_LUNG_WINDOW (512x512x255x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-030/THIN_LUNG_WINDOW.nii"
+Conversion required 6.980459 seconds (1.303277 for core code).
+
+Converting R01-031
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 272 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-031/3D_Slicer_segmentation_result (512x512x271x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-031/3D_Slicer_segmentation_result.nii"
+Convert 271 DICOM as data/generated/NIfTI/R01-031/THIN_LUNG_WINDOW (512x512x271x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-031/THIN_LUNG_WINDOW.nii"
+Conversion required 8.460204 seconds (1.484270 for core code).
+
+Converting R01-032
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 305 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-032/3D_Slicer_segmentation_result (512x512x304x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-032/3D_Slicer_segmentation_result.nii"
+Convert 304 DICOM as data/generated/NIfTI/R01-032/THIN_LUNG_WINDOW (512x512x304x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-032/THIN_LUNG_WINDOW.nii"
+Conversion required 13.602182 seconds (1.613456 for core code).
+
+Converting R01-033
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 301 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-033/3D_Slicer_segmentation_result (512x512x300x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-033/3D_Slicer_segmentation_result.nii"
+Convert 300 DICOM as data/generated/NIfTI/R01-033/THIN_LUNG_WINDOW (512x512x300x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-033/THIN_LUNG_WINDOW.nii"
+Conversion required 8.371275 seconds (1.548095 for core code).
+
+Converting R01-034
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 261 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-034/3D_Slicer_segmentation_result (512x512x260x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-034/3D_Slicer_segmentation_result.nii"
+Convert 260 DICOM as data/generated/NIfTI/R01-034/THIN_LUNG_WINDOW (512x512x260x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-034/THIN_LUNG_WINDOW.nii"
+Conversion required 6.449564 seconds (1.408470 for core code).
+
+Converting R01-035
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 297 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-035/3D_Slicer_segmentation_result (512x512x296x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-035/3D_Slicer_segmentation_result.nii"
+Convert 296 DICOM as data/generated/NIfTI/R01-035/THIN_LUNG_WINDOW (512x512x296x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-035/THIN_LUNG_WINDOW.nii"
+Conversion required 7.156146 seconds (1.592268 for core code).
+
+Converting R01-036
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 323 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-036/3D_Slicer_segmentation_result (512x512x322x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-036/3D_Slicer_segmentation_result.nii"
+Convert 322 DICOM as data/generated/NIfTI/R01-036/THIN_LUNG_WINDOW (512x512x322x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-036/THIN_LUNG_WINDOW.nii"
+Conversion required 6.249499 seconds (1.707690 for core code).
+
+Converting R01-037
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 272 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-037/3D_Slicer_segmentation_result (512x512x271x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-037/3D_Slicer_segmentation_result.nii"
+Convert 271 DICOM as data/generated/NIfTI/R01-037/THIN_LUNG_WINDOW (512x512x271x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-037/THIN_LUNG_WINDOW.nii"
+Conversion required 9.070480 seconds (1.430978 for core code).
+
+Converting R01-038
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 126 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-038/3D_Slicer_segmentation_result (512x512x6x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-038/3D_Slicer_segmentation_result.nii"
+Convert 125 DICOM as data/generated/NIfTI/R01-038/CT_Thick_Axials_2.5mm (512x512x125x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-038/CT_Thick_Axials_2.5mm.nii"
+Conversion required 2.395266 seconds (0.470327 for core code).
+
+Converting R01-039
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 126 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-039/3D_Slicer_segmentation_result (512x512x125x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-039/3D_Slicer_segmentation_result.nii"
+Convert 125 DICOM as data/generated/NIfTI/R01-039/CT_Thick_Axials_2.5mm (512x512x125x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-039/CT_Thick_Axials_2.5mm.nii"
+Conversion required 2.568068 seconds (0.657886 for core code).
+
+Converting R01-040
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 317 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-040/3D_Slicer_segmentation_result (512x512x316x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-040/3D_Slicer_segmentation_result.nii"
+Convert 316 DICOM as data/generated/NIfTI/R01-040/THIN_LUNG_WINDOW (512x512x316x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-040/THIN_LUNG_WINDOW.nii"
+Conversion required 11.699396 seconds (1.697843 for core code).
+
+Converting R01-041
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 286 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-041/3D_Slicer_segmentation_result (512x512x285x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-041/3D_Slicer_segmentation_result.nii"
+Convert 285 DICOM as data/generated/NIfTI/R01-041/THIN_LUNG_WINDOW (512x512x285x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-041/THIN_LUNG_WINDOW.nii"
+Conversion required 6.088718 seconds (1.482658 for core code).
+
+Converting R01-042
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 241 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-042/3D_Slicer_segmentation_result (512x512x240x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-042/3D_Slicer_segmentation_result.nii"
+Convert 240 DICOM as data/generated/NIfTI/R01-042/THIN_LUNG_WINDOW (512x512x240x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-042/THIN_LUNG_WINDOW.nii"
+Conversion required 8.164259 seconds (1.290839 for core code).
+
+Converting R01-043
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 126 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-043/3D_Slicer_segmentation_result (512x512x125x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-043/3D_Slicer_segmentation_result.nii"
+Convert 125 DICOM as data/generated/NIfTI/R01-043/CT_Thick_Axials_2.5mm (512x512x125x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-043/CT_Thick_Axials_2.5mm.nii"
+Conversion required 2.915049 seconds (0.663892 for core code).
+
+Converting R01-044
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 130 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-044/3D_Slicer_segmentation_result (512x512x129x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-044/3D_Slicer_segmentation_result.nii"
+Convert 129 DICOM as data/generated/NIfTI/R01-044/CT_Thick_Axials_2.5mm (512x512x129x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-044/CT_Thick_Axials_2.5mm.nii"
+Conversion required 3.055654 seconds (0.679050 for core code).
+
+Converting R01-045
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 283 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-045/3D_Slicer_segmentation_result (512x512x282x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-045/3D_Slicer_segmentation_result.nii"
+Convert 282 DICOM as data/generated/NIfTI/R01-045/THIN_LUNG_WINDOW (512x512x282x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-045/THIN_LUNG_WINDOW.nii"
+Conversion required 13.294784 seconds (1.583268 for core code).
+
+Converting R01-046
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 253 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-046/3D_Slicer_segmentation_result (512x512x252x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-046/3D_Slicer_segmentation_result.nii"
+Convert 252 DICOM as data/generated/NIfTI/R01-046/THIN_LUNG_WINDOW (512x512x252x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-046/THIN_LUNG_WINDOW.nii"
+Conversion required 9.567978 seconds (1.380823 for core code).
+
+Converting R01-047
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 227 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-047/3D_Slicer_segmentation_result (512x512x226x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-047/3D_Slicer_segmentation_result.nii"
+Convert 226 DICOM as data/generated/NIfTI/R01-047/THIN_LUNG_WINDOW (512x512x226x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-047/THIN_LUNG_WINDOW.nii"
+Conversion required 11.417342 seconds (1.246569 for core code).
+
+Converting R01-048
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 637 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-048/3D_Slicer_segmentation_result (512x512x636x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-048/3D_Slicer_segmentation_result.nii"
+Convert 636 DICOM as data/generated/NIfTI/R01-048/CHEST_1.0_B45f (512x512x636x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-048/CHEST_1.0_B45f.nii"
+Conversion required 14.458209 seconds (3.321213 for core code).
+
+Converting R01-049
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 323 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-049/3D_Slicer_segmentation_result (512x512x322x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-049/3D_Slicer_segmentation_result.nii"
+Convert 322 DICOM as data/generated/NIfTI/R01-049/LUNG_1MM_B45f (512x512x322x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-049/LUNG_1MM_B45f.nii"
+Conversion required 7.460239 seconds (1.666977 for core code).
+
+Converting R01-050
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 292 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-050/3D_Slicer_segmentation_result (512x512x291x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-050/3D_Slicer_segmentation_result.nii"
+Convert 291 DICOM as data/generated/NIfTI/R01-050/1.25MM_CHEST_BONE_PLUS (512x512x291x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-050/1.25MM_CHEST_BONE_PLUS.nii"
+Conversion required 9.253120 seconds (1.548977 for core code).
+
+Converting R01-051
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 225 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-051/3D_Slicer_segmentation_result (512x512x224x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-051/3D_Slicer_segmentation_result.nii"
+Convert 224 DICOM as data/generated/NIfTI/R01-051/1.25MM_CHEST_BONE_PLUS (512x512x224x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-051/1.25MM_CHEST_BONE_PLUS.nii"
+Conversion required 6.595920 seconds (1.160535 for core code).
+
+Converting R01-052
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 156 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-052/3D_Slicer_segmentation_result (512x512x155x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-052/3D_Slicer_segmentation_result.nii"
+Convert 155 DICOM as data/generated/NIfTI/R01-052/CT_Thick_Axials_2.5mm (512x512x155x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-052/CT_Thick_Axials_2.5mm.nii"
+Conversion required 2.987082 seconds (0.871078 for core code).
+
+Converting R01-053
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 120 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-053/3D_Slicer_segmentation_result (512x512x119x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-053/3D_Slicer_segmentation_result.nii"
+Convert 119 DICOM as data/generated/NIfTI/R01-053/CT_Thick_Axials_2.5mm (512x512x119x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-053/CT_Thick_Axials_2.5mm.nii"
+Conversion required 2.236130 seconds (0.623469 for core code).
+
+Converting R01-054
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 253 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-054/3D_Slicer_segmentation_result (512x512x252x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-054/3D_Slicer_segmentation_result.nii"
+Convert 252 DICOM as data/generated/NIfTI/R01-054/THIN_LUNG_WINDOW (512x512x252x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-054/THIN_LUNG_WINDOW.nii"
+Conversion required 7.442830 seconds (1.344099 for core code).
+
+Converting R01-055
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 242 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-055/3D_Slicer_segmentation_result (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-055/3D_Slicer_segmentation_result.nii"
+Convert 241 DICOM as data/generated/NIfTI/R01-055/THIN_LUNG_WINDOW (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-055/THIN_LUNG_WINDOW.nii"
+Conversion required 8.732581 seconds (1.312664 for core code).
+
+Converting R01-056
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 243 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-056/3D_Slicer_segmentation_result (512x512x242x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-056/3D_Slicer_segmentation_result.nii"
+Convert 242 DICOM as data/generated/NIfTI/R01-056/THIN_LUNG_WINDOW (512x512x242x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-056/THIN_LUNG_WINDOW.nii"
+Conversion required 9.795910 seconds (1.275503 for core code).
+
+Converting R01-057
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 255 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-057/3D_Slicer_segmentation_result (512x512x254x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-057/3D_Slicer_segmentation_result.nii"
+Convert 254 DICOM as data/generated/NIfTI/R01-057/CHEST_LUNG (512x512x254x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-057/CHEST_LUNG.nii"
+Conversion required 5.073375 seconds (1.323228 for core code).
+
+Converting R01-058
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 113 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-058/3D_Slicer_segmentation_result (512x512x112x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-058/3D_Slicer_segmentation_result.nii"
+Convert 112 DICOM as data/generated/NIfTI/R01-058/CT_Thick_Axials_2.5mm (512x512x112x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-058/CT_Thick_Axials_2.5mm.nii"
+Conversion required 1.820604 seconds (0.547829 for core code).
+
+Converting R01-059
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 1314 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-059/3D_Slicer_segmentation_result (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-059/3D_Slicer_segmentation_result.nii"
+Convert 241 DICOM as data/generated/NIfTI/R01-059/THIN_LUNG_WINDOW (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-059/THIN_LUNG_WINDOW.nii"
+Slices not stacked: orientation varies (vNav or localizer?) [0 1 0 0 0 -1] != [1 0 0 0 0 -1]
+Convert 293 DICOM as data/generated/NIfTI/R01-059/SAGITTAL_i00002 (512x512x293x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-059/SAGITTAL_i00002.nii"
+Convert 1 DICOM as data/generated/NIfTI/R01-059/SAGITTAL_i00001 (512x512x1x1)
+Compress: "/usr/local/bin/pigz" -n -f -9 "data/generated/NIfTI/R01-059/SAGITTAL_i00001.nii"
+Convert 177 DICOM as data/generated/NIfTI/R01-059/CORONAL_i00002 (512x512x177x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-059/CORONAL_i00002.nii"
+Convert 1 DICOM as data/generated/NIfTI/R01-059/CORONAL_i00001 (512x512x1x1)
+Compress: "/usr/local/bin/pigz" -n -f -9 "data/generated/NIfTI/R01-059/CORONAL_i00001.nii"
+Convert 277 DICOM as data/generated/NIfTI/R01-059/THIN_STANDARD_WINDOW (512x512x277x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-059/THIN_STANDARD_WINDOW.nii"
+Convert 252 DICOM as data/generated/NIfTI/R01-059/AXIAL_MIP_i00002 (512x512x252x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-059/AXIAL_MIP_i00002.nii"
+Convert 1 DICOM as data/generated/NIfTI/R01-059/AXIAL_MIP_i00001 (512x512x1x1)
+Compress: "/usr/local/bin/pigz" -n -f -9 "data/generated/NIfTI/R01-059/AXIAL_MIP_i00001.nii"
+Convert 70 DICOM as data/generated/NIfTI/R01-059/CT_CHEST (512x512x70x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-059/CT_CHEST.nii"
+Conversion required 27.480516 seconds (4.920284 for core code).
+
+Converting R01-060
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 219 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-060/3D_Slicer_segmentation_result (512x512x218x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-060/3D_Slicer_segmentation_result.nii"
+Convert 218 DICOM as data/generated/NIfTI/R01-060/THIN_LUNG_WINDOW (512x512x218x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-060/THIN_LUNG_WINDOW.nii"
+Conversion required 10.371133 seconds (1.190148 for core code).
+
+Converting R01-061
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 120 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-061/3D_Slicer_segmentation_result (512x512x119x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-061/3D_Slicer_segmentation_result.nii"
+Convert 119 DICOM as data/generated/NIfTI/R01-061/CT_Thick_Axials_2.5mm (512x512x119x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-061/CT_Thick_Axials_2.5mm.nii"
+Conversion required 2.772622 seconds (0.640767 for core code).
+
+Converting R01-062
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 212 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-062/3D_Slicer_segmentation_result (512x512x211x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-062/3D_Slicer_segmentation_result.nii"
+Convert 211 DICOM as data/generated/NIfTI/R01-062/THIN_LUNG_WINDOW (512x512x211x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-062/THIN_LUNG_WINDOW.nii"
+Conversion required 8.660439 seconds (1.163947 for core code).
+
+Converting R01-063
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 244 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-063/3D_Slicer_segmentation_result (512x512x243x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-063/3D_Slicer_segmentation_result.nii"
+Convert 243 DICOM as data/generated/NIfTI/R01-063/THIN_LUNG_WINDOW (512x512x243x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-063/THIN_LUNG_WINDOW.nii"
+Conversion required 8.528042 seconds (1.299544 for core code).
+
+Converting R01-064
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 246 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-064/3D_Slicer_segmentation_result (512x512x245x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-064/3D_Slicer_segmentation_result.nii"
+Convert 245 DICOM as data/generated/NIfTI/R01-064/THIN_LUNG_WINDOW (512x512x245x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-064/THIN_LUNG_WINDOW.nii"
+Conversion required 12.019067 seconds (1.358213 for core code).
+
+Converting R01-065
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 249 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-065/3D_Slicer_segmentation_result (512x512x248x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-065/3D_Slicer_segmentation_result.nii"
+Convert 248 DICOM as data/generated/NIfTI/R01-065/THIN_LUNG_WINDOW (512x512x248x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-065/THIN_LUNG_WINDOW.nii"
+Conversion required 6.898063 seconds (1.228461 for core code).
+
+Converting R01-066
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 129 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-066/3D_Slicer_segmentation_result (512x512x128x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-066/3D_Slicer_segmentation_result.nii"
+Convert 128 DICOM as data/generated/NIfTI/R01-066/CT_Thick_Axials_2.5mm (512x512x128x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-066/CT_Thick_Axials_2.5mm.nii"
+Conversion required 2.087223 seconds (0.636825 for core code).
+
+Converting R01-067
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 242 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-067/3D_Slicer_segmentation_result (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-067/3D_Slicer_segmentation_result.nii"
+Convert 241 DICOM as data/generated/NIfTI/R01-067/THIN_LUNG_WINDOW (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-067/THIN_LUNG_WINDOW.nii"
+Conversion required 7.190520 seconds (1.229695 for core code).
+
+Converting R01-068
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 301 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-068/3D_Slicer_segmentation_result (512x512x300x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-068/3D_Slicer_segmentation_result.nii"
+Convert 300 DICOM as data/generated/NIfTI/R01-068/THIN_LUNG_WINDOW (512x512x300x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-068/THIN_LUNG_WINDOW.nii"
+Conversion required 13.698226 seconds (1.504687 for core code).
+
+Converting R01-069
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 262 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-069/3D_Slicer_segmentation_result (512x512x261x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-069/3D_Slicer_segmentation_result.nii"
+Convert 261 DICOM as data/generated/NIfTI/R01-069/THIN_LUNG_WINDOW (512x512x261x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-069/THIN_LUNG_WINDOW.nii"
+Conversion required 9.683004 seconds (1.374634 for core code).
+
+Converting R01-070
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 243 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-070/3D_Slicer_segmentation_result (512x512x242x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-070/3D_Slicer_segmentation_result.nii"
+Convert 242 DICOM as data/generated/NIfTI/R01-070/THIN_LUNG_WINDOW (512x512x242x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-070/THIN_LUNG_WINDOW.nii"
+Conversion required 8.353136 seconds (1.189845 for core code).
+
+Converting R01-071
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 267 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-071/3D_Slicer_segmentation_result (512x512x266x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-071/3D_Slicer_segmentation_result.nii"
+Convert 266 DICOM as data/generated/NIfTI/R01-071/THIN_LUNG_WINDOW (512x512x266x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-071/THIN_LUNG_WINDOW.nii"
+Conversion required 10.554578 seconds (1.422704 for core code).
+
+Converting R01-072
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 290 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-072/3D_Slicer_segmentation_result (512x512x289x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-072/3D_Slicer_segmentation_result.nii"
+Convert 289 DICOM as data/generated/NIfTI/R01-072/THIN_LUNG_WINDOW (512x512x289x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-072/THIN_LUNG_WINDOW.nii"
+Conversion required 12.898122 seconds (1.585515 for core code).
+
+Converting R01-073
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 217 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-073/3D_Slicer_segmentation_result (512x512x216x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-073/3D_Slicer_segmentation_result.nii"
+Convert 216 DICOM as data/generated/NIfTI/R01-073/THIN_LUNG_WINDOW (512x512x216x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-073/THIN_LUNG_WINDOW.nii"
+Conversion required 7.530554 seconds (1.192975 for core code).
+
+Converting R01-074
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 494 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-074/3D_Slicer_segmentation_result (512x512x493x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-074/3D_Slicer_segmentation_result.nii"
+Convert 493 DICOM as data/generated/NIfTI/R01-074/0.625MM_CHEST_NO_PACS (512x512x493x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-074/0.625MM_CHEST_NO_PACS.nii"
+Conversion required 15.973375 seconds (2.608691 for core code).
+
+Converting R01-075
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 370 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-075/3D_Slicer_segmentation_result (512x512x369x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-075/3D_Slicer_segmentation_result.nii"
+Convert 369 DICOM as data/generated/NIfTI/R01-075/Thorax_1.0_B45f (512x512x369x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-075/Thorax_1.0_B45f.nii"
+Conversion required 7.605813 seconds (1.905905 for core code).
+
+Converting R01-076
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 424 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-076/3D_Slicer_segmentation_result (512x512x35x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-076/3D_Slicer_segmentation_result.nii"
+Convert 423 DICOM as data/generated/NIfTI/R01-076/THINS (512x512x423x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-076/THINS.nii"
+Conversion required 9.691314 seconds (1.532371 for core code).
+
+Converting R01-077
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 245 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-077/3D_Slicer_segmentation_result (512x512x244x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-077/3D_Slicer_segmentation_result.nii"
+Convert 244 DICOM as data/generated/NIfTI/R01-077/1.25MM_CHEST_BONE (512x512x244x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-077/1.25MM_CHEST_BONE.nii"
+Conversion required 5.301076 seconds (1.229753 for core code).
+
+Converting R01-078
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 272 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-078/3D_Slicer_segmentation_result (512x512x72x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-078/3D_Slicer_segmentation_result.nii"
+Convert 271 DICOM as data/generated/NIfTI/R01-078/SUPER (512x512x271x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-078/SUPER.nii"
+Conversion required 5.001527 seconds (1.127383 for core code).
+
+Converting R01-079
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 116 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-079/3D_Slicer_segmentation_result (512x512x115x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-079/3D_Slicer_segmentation_result.nii"
+Convert 115 DICOM as data/generated/NIfTI/R01-079/2.5_MM_LUNG (512x512x115x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-079/2.5_MM_LUNG.nii"
+Conversion required 4.036341 seconds (0.597595 for core code).
+
+Converting R01-080
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 252 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-080/3D_Slicer_segmentation_result (512x512x251x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-080/3D_Slicer_segmentation_result.nii"
+Convert 251 DICOM as data/generated/NIfTI/R01-080/THIN_LUNG_WINDOW (512x512x251x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-080/THIN_LUNG_WINDOW.nii"
+Conversion required 8.487809 seconds (1.399759 for core code).
+
+Converting R01-081
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 451 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-081/3D_Slicer_segmentation_result (512x512x450x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-081/3D_Slicer_segmentation_result.nii"
+Convert 450 DICOM as data/generated/NIfTI/R01-081/CHEST_NON-CON (512x512x450x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-081/CHEST_NON-CON.nii"
+Conversion required 8.309232 seconds (2.212968 for core code).
+
+Converting R01-082
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 250 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-082/3D_Slicer_segmentation_result (512x512x249x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-082/3D_Slicer_segmentation_result.nii"
+Convert 249 DICOM as data/generated/NIfTI/R01-082/CHEST_LUNG (512x512x249x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-082/CHEST_LUNG.nii"
+Conversion required 9.432703 seconds (1.300067 for core code).
+
+Converting R01-083
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 135 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-083/3D_Slicer_segmentation_result (512x512x134x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-083/3D_Slicer_segmentation_result.nii"
+Convert 134 DICOM as data/generated/NIfTI/R01-083/CT_Thick_Axials_2.5mm (512x512x134x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-083/CT_Thick_Axials_2.5mm.nii"
+Conversion required 2.367473 seconds (0.694932 for core code).
+
+Converting R01-084
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 268 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-084/3D_Slicer_segmentation_result (512x512x267x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-084/3D_Slicer_segmentation_result.nii"
+Convert 267 DICOM as data/generated/NIfTI/R01-084/THIN_LUNG_WINDOW (512x512x267x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-084/THIN_LUNG_WINDOW.nii"
+Conversion required 9.500133 seconds (1.396838 for core code).
+
+Converting R01-085
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 257 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-085/3D_Slicer_segmentation_result (512x512x256x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-085/3D_Slicer_segmentation_result.nii"
+Convert 256 DICOM as data/generated/NIfTI/R01-085/AX_1.25 (512x512x256x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-085/AX_1.25.nii"
+Conversion required 6.104141 seconds (1.323555 for core code).
+
+Converting R01-086
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 242 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-086/3D_Slicer_segmentation_result (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-086/3D_Slicer_segmentation_result.nii"
+Convert 241 DICOM as data/generated/NIfTI/R01-086/THIN_LUNG_WINDOW (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-086/THIN_LUNG_WINDOW.nii"
+Conversion required 9.134702 seconds (1.294213 for core code).
+
+Converting R01-087
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 253 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-087/3D_Slicer_segmentation_result (512x512x252x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-087/3D_Slicer_segmentation_result.nii"
+Convert 252 DICOM as data/generated/NIfTI/R01-087/THIN_CHEST_LUNG (512x512x252x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-087/THIN_CHEST_LUNG.nii"
+Conversion required 8.659148 seconds (1.202943 for core code).
+
+Converting R01-088
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 268 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-088/3D_Slicer_segmentation_result (512x512x267x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-088/3D_Slicer_segmentation_result.nii"
+Convert 267 DICOM as data/generated/NIfTI/R01-088/THIN_CHEST_LUNG (512x512x267x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-088/THIN_CHEST_LUNG.nii"
+Conversion required 9.932921 seconds (1.419746 for core code).
+
+Converting R01-089
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 369 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-089/3D_Slicer_segmentation_result (512x512x77x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-089/3D_Slicer_segmentation_result.nii"
+Convert 368 DICOM as data/generated/NIfTI/R01-089/IN_REACH (512x512x368x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-089/IN_REACH.nii"
+Conversion required 8.121103 seconds (1.365312 for core code).
+
+Converting R01-090
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 219 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-090/3D_Slicer_segmentation_result (512x512x218x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-090/3D_Slicer_segmentation_result.nii"
+Convert 218 DICOM as data/generated/NIfTI/R01-090/CHEST_1.25MM (512x512x218x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-090/CHEST_1.25MM.nii"
+Conversion required 7.214661 seconds (1.160155 for core code).
+
+Converting R01-091
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 314 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-091/3D_Slicer_segmentation_result (512x512x313x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-091/3D_Slicer_segmentation_result.nii"
+Convert 313 DICOM as data/generated/NIfTI/R01-091/LUNG_1MM_B45f (512x512x313x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-091/LUNG_1MM_B45f.nii"
+Conversion required 8.762390 seconds (1.657561 for core code).
+
+Converting R01-092
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 246 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-092/3D_Slicer_segmentation_result (512x512x245x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-092/3D_Slicer_segmentation_result.nii"
+Convert 245 DICOM as data/generated/NIfTI/R01-092/THIN_LUNG_WINDOW (512x512x245x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-092/THIN_LUNG_WINDOW.nii"
+Conversion required 9.588137 seconds (1.386182 for core code).
+
+Converting R01-093
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 245 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-093/3D_Slicer_segmentation_result (512x512x244x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-093/3D_Slicer_segmentation_result.nii"
+Convert 244 DICOM as data/generated/NIfTI/R01-093/THIN_LUNG_WINDOW (512x512x244x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-093/THIN_LUNG_WINDOW.nii"
+Conversion required 7.790402 seconds (1.379669 for core code).
+
+Converting R01-094
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 246 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-094/3D_Slicer_segmentation_result (512x512x245x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-094/3D_Slicer_segmentation_result.nii"
+Convert 245 DICOM as data/generated/NIfTI/R01-094/THIN_LUNG_WINDOW (512x512x245x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-094/THIN_LUNG_WINDOW.nii"
+Conversion required 6.265541 seconds (1.333439 for core code).
+
+Converting R01-095
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 229 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-095/3D_Slicer_segmentation_result (512x512x228x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-095/3D_Slicer_segmentation_result.nii"
+Convert 228 DICOM as data/generated/NIfTI/R01-095/THIN_LUNG_WINDOW (512x512x228x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-095/THIN_LUNG_WINDOW.nii"
+Conversion required 7.088467 seconds (1.215740 for core code).
+
+Converting R01-096
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 242 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-096/3D_Slicer_segmentation_result (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-096/3D_Slicer_segmentation_result.nii"
+Convert 241 DICOM as data/generated/NIfTI/R01-096/THIN_LUNG_WINDOW (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-096/THIN_LUNG_WINDOW.nii"
+Conversion required 8.873346 seconds (1.229012 for core code).
+
+Converting R01-097
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 232 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-097/3D_Slicer_segmentation_result (512x512x231x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-097/3D_Slicer_segmentation_result.nii"
+Convert 231 DICOM as data/generated/NIfTI/R01-097/THIN_LUNG_WINDOW (512x512x231x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-097/THIN_LUNG_WINDOW.nii"
+Conversion required 10.653203 seconds (1.176448 for core code).
+
+Converting R01-098
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 213 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-098/ePAD_Generated_DSO (512x512x22x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-098/ePAD_Generated_DSO.nii"
+Convert 212 DICOM as data/generated/NIfTI/R01-098/LUNG (512x512x212x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-098/LUNG.nii"
+Conversion required 6.412546 seconds (0.859809 for core code).
+
+Converting R01-099
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 249 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-099/ePAD_Generated_DSO (512x512x50x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-099/ePAD_Generated_DSO.nii"
+Convert 248 DICOM as data/generated/NIfTI/R01-099/Chest_wo_3.0_B40f (512x512x248x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-099/Chest_wo_3.0_B40f.nii"
+Conversion required 7.366109 seconds (0.987861 for core code).
+
+Converting R01-100
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 231 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-100/ePAD_Generated_DSO_Nov-11-2212 (512x512x25x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-100/ePAD_Generated_DSO_Nov-11-2212.nii"
+Convert 230 DICOM as data/generated/NIfTI/R01-100/CHEST_1.25MM (512x512x230x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-100/CHEST_1.25MM.nii"
+Conversion required 9.665678 seconds (0.838563 for core code).
+
+Converting R01-101
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 306 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-101/ePAD_Generated_DSO_Nov-11-2215 (512x512x26x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-101/ePAD_Generated_DSO_Nov-11-2215.nii"
+Convert 305 DICOM as data/generated/NIfTI/R01-101/LUNG_1MM_B45f (512x512x305x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-101/LUNG_1MM_B45f.nii"
+Conversion required 6.294819 seconds (1.153574 for core code).
+
+Converting R01-102
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 255 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-102/ePAD_Generated_DSO_Nov-11-2214 (512x512x38x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-102/ePAD_Generated_DSO_Nov-11-2214.nii"
+Convert 254 DICOM as data/generated/NIfTI/R01-102/CHEST_1.25MM (512x512x254x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-102/CHEST_1.25MM.nii"
+Conversion required 13.327267 seconds (0.929947 for core code).
+
+Converting R01-103
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 244 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-103/ePAD_Generated_DSO_Nov-11-2223 (512x512x65x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-103/ePAD_Generated_DSO_Nov-11-2223.nii"
+Convert 243 DICOM as data/generated/NIfTI/R01-103/CHEST_1.25MM (512x512x243x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-103/CHEST_1.25MM.nii"
+Conversion required 7.292844 seconds (0.967141 for core code).
+
+Converting R01-104
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 260 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-104/ePAD_Generated_DSO_Nov-11-2214 (512x512x23x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-104/ePAD_Generated_DSO_Nov-11-2214.nii"
+Convert 259 DICOM as data/generated/NIfTI/R01-104/CHEST_1.25MM (512x512x259x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-104/CHEST_1.25MM.nii"
+Conversion required 6.804175 seconds (1.054421 for core code).
+
+Converting R01-105
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 122 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-105/ePAD_Generated_DSO_Dec-22-1431 (512x512x14x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-105/ePAD_Generated_DSO_Dec-22-1431.nii"
+Convert 121 DICOM as data/generated/NIfTI/R01-105/LUNG (512x512x121x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-105/LUNG.nii"
+Conversion required 1.999240 seconds (0.494936 for core code).
+
+Converting R01-106
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 134 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-106/ePAD_Generated_DSO_Nov-11-2213 (512x512x23x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-106/ePAD_Generated_DSO_Nov-11-2213.nii"
+Convert 133 DICOM as data/generated/NIfTI/R01-106/2.5_MM_LUNG (512x512x133x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-106/2.5_MM_LUNG.nii"
+Conversion required 3.478505 seconds (0.496640 for core code).
+
+Converting R01-107
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 269 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-107/ePAD_Generated_DSO_Nov-11-2221 (512x512x41x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-107/ePAD_Generated_DSO_Nov-11-2221.nii"
+Convert 268 DICOM as data/generated/NIfTI/R01-107/1.25MM_CHEST_BONE_PLUS (512x512x268x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-107/1.25MM_CHEST_BONE_PLUS.nii"
+Conversion required 9.653586 seconds (1.110765 for core code).
+
+Converting R01-108
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 252 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-108/ePAD_Generated_DSO (512x512x13x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-108/ePAD_Generated_DSO.nii"
+Convert 251 DICOM as data/generated/NIfTI/R01-108/AX_1.25 (512x512x251x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-108/AX_1.25.nii"
+Conversion required 4.231365 seconds (1.013071 for core code).
+
+Converting R01-109
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 281 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-109/ePAD_Generated_DSO_Dec-22-1433 (512x512x13x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-109/ePAD_Generated_DSO_Dec-22-1433.nii"
+Convert 280 DICOM as data/generated/NIfTI/R01-109/AX_1.25 (512x512x280x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-109/AX_1.25.nii"
+Conversion required 5.367154 seconds (1.036069 for core code).
+
+Converting R01-110
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 234 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-110/ePAD_Generated_DSO_Nov-11-2220 (512x512x28x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-110/ePAD_Generated_DSO_Nov-11-2220.nii"
+Convert 233 DICOM as data/generated/NIfTI/R01-110/AX_1.25 (512x512x233x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-110/AX_1.25.nii"
+Conversion required 4.300820 seconds (0.890969 for core code).
+
+Converting R01-111
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 234 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-111/ePAD_Generated_DSO_Nov-14-1744 (512x512x13x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-111/ePAD_Generated_DSO_Nov-14-1744.nii"
+Convert 233 DICOM as data/generated/NIfTI/R01-111/THIN_LUNG_WINDOW (512x512x233x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-111/THIN_LUNG_WINDOW.nii"
+Conversion required 10.397823 seconds (0.849687 for core code).
+
+Converting R01-112
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 251 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-112/ePAD_Generated_DSO_Dec-22-1435 (512x512x61x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-112/ePAD_Generated_DSO_Dec-22-1435.nii"
+Convert 250 DICOM as data/generated/NIfTI/R01-112/THIN_LUNG_WINDOW (512x512x250x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-112/THIN_LUNG_WINDOW.nii"
+Conversion required 6.004797 seconds (1.029928 for core code).
+
+Converting R01-113
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 242 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-113/ePAD_Generated_DSO_Nov-11-2212 (512x512x47x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-113/ePAD_Generated_DSO_Nov-11-2212.nii"
+Convert 241 DICOM as data/generated/NIfTI/R01-113/THIN_LUNG_WINDOW (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-113/THIN_LUNG_WINDOW.nii"
+Conversion required 9.720490 seconds (0.925195 for core code).
+
+Converting R01-114
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 227 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-114/ePAD_Generated_DSO_Dec-22-1434 (512x512x47x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-114/ePAD_Generated_DSO_Dec-22-1434.nii"
+Convert 226 DICOM as data/generated/NIfTI/R01-114/THIN_LUNG_WINDOW (512x512x226x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-114/THIN_LUNG_WINDOW.nii"
+Conversion required 5.316727 seconds (0.916048 for core code).
+
+Converting R01-115
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 246 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-115/ePAD_Generated_DSO_Nov-11-2218 (512x512x10x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-115/ePAD_Generated_DSO_Nov-11-2218.nii"
+Convert 245 DICOM as data/generated/NIfTI/R01-115/THIN_LUNG_WINDOW (512x512x245x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-115/THIN_LUNG_WINDOW.nii"
+Conversion required 11.929265 seconds (0.907137 for core code).
+
+Converting R01-116
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 224 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-116/ePAD_Generated_DSO_Nov-14-1739 (512x512x11x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-116/ePAD_Generated_DSO_Nov-14-1739.nii"
+Convert 223 DICOM as data/generated/NIfTI/R01-116/THIN_LUNG_WINDOW (512x512x223x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-116/THIN_LUNG_WINDOW.nii"
+Conversion required 8.274899 seconds (0.866398 for core code).
+
+Converting R01-117
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 223 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-117/ePAD_Generated_DSO_Nov-11-2214 (512x512x35x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-117/ePAD_Generated_DSO_Nov-11-2214.nii"
+Convert 222 DICOM as data/generated/NIfTI/R01-117/THIN_LUNG_WINDOW (512x512x222x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-117/THIN_LUNG_WINDOW.nii"
+Conversion required 8.580673 seconds (0.909683 for core code).
+
+Converting R01-118
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 212 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-118/ePAD_Generated_DSO_Dec-22-1433 (512x512x29x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-118/ePAD_Generated_DSO_Dec-22-1433.nii"
+Convert 211 DICOM as data/generated/NIfTI/R01-118/THIN_LUNG_WINDOW (512x512x211x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-118/THIN_LUNG_WINDOW.nii"
+Conversion required 7.036374 seconds (0.839382 for core code).
+
+Converting R01-119
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 306 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-119/ePAD_Generated_DSO_Nov-11-2218 (512x512x44x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-119/ePAD_Generated_DSO_Nov-11-2218.nii"
+Warning: Interslice distance varies in this volume (incompatible with NIfTI format).
+Convert 305 DICOM as data/generated/NIfTI/R01-119/THIN_LUNG_WINDOW (512x512x305x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-119/THIN_LUNG_WINDOW.nii"
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-119/THIN_LUNG_WINDOW_Eq_1.nii"
+Conversion required 23.197307 seconds (2.322324 for core code).
+
+Converting R01-120
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 243 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-120/ePAD_Generated_DSO_Nov-11-2214 (512x512x18x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-120/ePAD_Generated_DSO_Nov-11-2214.nii"
+Convert 242 DICOM as data/generated/NIfTI/R01-120/THIN_LUNG_WINDOW (512x512x242x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-120/THIN_LUNG_WINDOW.nii"
+Conversion required 7.947282 seconds (0.946631 for core code).
+
+Converting R01-121
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 235 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-121/ePAD_Generated_DSO_Nov-11-2219 (512x512x18x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-121/ePAD_Generated_DSO_Nov-11-2219.nii"
+Convert 234 DICOM as data/generated/NIfTI/R01-121/THIN_LUNG_WINDOW (512x512x234x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-121/THIN_LUNG_WINDOW.nii"
+Conversion required 9.265298 seconds (0.953309 for core code).
+
+Converting R01-122
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 238 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-122/ePAD_Generated_DSO_Nov-11-2214 (512x512x23x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-122/ePAD_Generated_DSO_Nov-11-2214.nii"
+Convert 237 DICOM as data/generated/NIfTI/R01-122/THIN_LUNG_WINDOW (512x512x237x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-122/THIN_LUNG_WINDOW.nii"
+Conversion required 8.947433 seconds (0.878674 for core code).
+
+Converting R01-123
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 223 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-123/ePAD_Generated_DSO_Nov-14-1755 (512x512x11x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-123/ePAD_Generated_DSO_Nov-14-1755.nii"
+Convert 222 DICOM as data/generated/NIfTI/R01-123/THIN_LUNG_WINDOW (512x512x222x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-123/THIN_LUNG_WINDOW.nii"
+Conversion required 6.443383 seconds (0.801234 for core code).
+
+Converting R01-124
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 252 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-124/ePAD_Generated_DSO_Nov-11-2223 (512x512x23x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-124/ePAD_Generated_DSO_Nov-11-2223.nii"
+Convert 251 DICOM as data/generated/NIfTI/R01-124/THIN_LUNG_WINDOW (512x512x251x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-124/THIN_LUNG_WINDOW.nii"
+Conversion required 10.121790 seconds (1.010116 for core code).
+
+Converting R01-125
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 267 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-125/ePAD_Generated_DSO_Nov-11-2217 (512x512x10x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-125/ePAD_Generated_DSO_Nov-11-2217.nii"
+Convert 266 DICOM as data/generated/NIfTI/R01-125/1.25MM_CHEST_BONE (512x512x266x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-125/1.25MM_CHEST_BONE.nii"
+Conversion required 8.723290 seconds (0.986297 for core code).
+
+Converting R01-126
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 328 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-126/ePAD_Generated_DSO_Nov-11-2219 (512x512x20x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-126/ePAD_Generated_DSO_Nov-11-2219.nii"
+Convert 327 DICOM as data/generated/NIfTI/R01-126/1.25MM_CHEST_BONE (512x512x327x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-126/1.25MM_CHEST_BONE.nii"
+Conversion required 12.543306 seconds (1.162776 for core code).
+
+Converting R01-127
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 302 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-127/ePAD_Generated_DSO_Nov-11-2216 (512x512x27x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-127/ePAD_Generated_DSO_Nov-11-2216.nii"
+Convert 301 DICOM as data/generated/NIfTI/R01-127/Thorax_1.0_B45f (512x512x301x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-127/Thorax_1.0_B45f.nii"
+Conversion required 7.996383 seconds (1.099718 for core code).
+
+Converting R01-128
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 260 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-128/ePAD_Generated_DSO (512x512x22x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-128/ePAD_Generated_DSO.nii"
+Convert 259 DICOM as data/generated/NIfTI/R01-128/AXIAL (512x512x259x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-128/AXIAL.nii"
+Conversion required 4.095235 seconds (0.963143 for core code).
+
+Converting R01-129
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 293 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-129/ePAD_Generated_DSO_Nov-11-2212 (512x512x40x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-129/ePAD_Generated_DSO_Nov-11-2212.nii"
+Convert 292 DICOM as data/generated/NIfTI/R01-129/1.25MM_CHEST_BONE (512x512x292x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-129/1.25MM_CHEST_BONE.nii"
+Conversion required 7.586244 seconds (1.119148 for core code).
+
+Converting R01-130
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 158 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-130/ePAD_Generated_DSO_Nov-14-1740 (512x512x17x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-130/ePAD_Generated_DSO_Nov-14-1740.nii"
+Convert 157 DICOM as data/generated/NIfTI/R01-130/Lung_2.0_Arterial_Phase_CE (512x512x157x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-130/Lung_2.0_Arterial_Phase_CE.nii"
+Conversion required 2.186827 seconds (0.572808 for core code).
+
+Converting R01-131
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 302 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-131/ePAD_Generated_DSO_Nov-14-1758 (512x512x24x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-131/ePAD_Generated_DSO_Nov-14-1758.nii"
+Convert 301 DICOM as data/generated/NIfTI/R01-131/1.25MM_CHEST_BONE (512x512x301x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-131/1.25MM_CHEST_BONE.nii"
+Conversion required 9.441562 seconds (1.073820 for core code).
+
+Converting R01-132
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 139 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-132/ePAD_Generated_DSO_Nov-11-2216 (512x512x12x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-132/ePAD_Generated_DSO_Nov-11-2216.nii"
+Convert 138 DICOM as data/generated/NIfTI/R01-132/(SafeCT)_STD_2.5mm (512x512x138x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-132/(SafeCT)_STD_2.5mm.nii"
+Conversion required 2.627755 seconds (0.463957 for core code).
+
+Converting R01-133
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 347 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-133/ePAD_Generated_DSO_Nov-11-2218 (512x512x39x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-133/ePAD_Generated_DSO_Nov-11-2218.nii"
+Convert 346 DICOM as data/generated/NIfTI/R01-133/Chest_1.0_B45f (512x512x346x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-133/Chest_1.0_B45f.nii"
+Conversion required 7.754350 seconds (1.309780 for core code).
+
+Converting R01-134
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 266 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-134/ePAD_Generated_DSO_Dec-22-1432 (512x512x19x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-134/ePAD_Generated_DSO_Dec-22-1432.nii"
+Convert 265 DICOM as data/generated/NIfTI/R01-134/1.25MM_BONE_PLUS (512x512x265x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-134/1.25MM_BONE_PLUS.nii"
+Conversion required 7.963220 seconds (0.959801 for core code).
+
+Converting R01-135
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 274 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-135/ePAD_Generated_DSO_Dec-22-1433 (512x512x47x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-135/ePAD_Generated_DSO_Dec-22-1433.nii"
+Convert 273 DICOM as data/generated/NIfTI/R01-135/1.25MM_CHEST_BONE_PLUS (512x512x273x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-135/1.25MM_CHEST_BONE_PLUS.nii"
+Conversion required 9.739128 seconds (1.050168 for core code).
+
+Converting R01-136
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 132 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-136/ePAD_Generated_DSO (512x512x10x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-136/ePAD_Generated_DSO.nii"
+Convert 131 DICOM as data/generated/NIfTI/R01-136/CHEST_3.0_B50f (512x512x131x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-136/CHEST_3.0_B50f.nii"
+Conversion required 2.813713 seconds (0.514116 for core code).
+
+Converting R01-137
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 311 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-137/ePAD_Generated_DSO_Nov-11-2213 (512x512x36x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-137/ePAD_Generated_DSO_Nov-11-2213.nii"
+Convert 310 DICOM as data/generated/NIfTI/R01-137/Thorax_1.0_B50f (512x512x310x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-137/Thorax_1.0_B50f.nii"
+Conversion required 8.363905 seconds (1.173202 for core code).
+
+Converting R01-138
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 300 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-138/ePAD_Generated_DSO_Nov-11-2212 (512x512x18x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-138/ePAD_Generated_DSO_Nov-11-2212.nii"
+Convert 299 DICOM as data/generated/NIfTI/R01-138/Thorax_1.0_B50f (512x512x299x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-138/Thorax_1.0_B50f.nii"
+Conversion required 8.496292 seconds (1.198524 for core code).
+
+Converting R01-139
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 258 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-139/ePAD_Generated_DSO_Nov-11-2221 (512x512x39x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-139/ePAD_Generated_DSO_Nov-11-2221.nii"
+Convert 257 DICOM as data/generated/NIfTI/R01-139/1.25MM_CHEST_BONE_PLUS (512x512x257x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-139/1.25MM_CHEST_BONE_PLUS.nii"
+Conversion required 8.024851 seconds (1.057415 for core code).
+
+Converting R01-140
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 270 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-140/ePAD_Generated_DSO_Nov-11-2216 (512x512x15x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-140/ePAD_Generated_DSO_Nov-11-2216.nii"
+Convert 269 DICOM as data/generated/NIfTI/R01-140/1.25MM_CHEST_BONE_PLUS (512x512x269x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-140/1.25MM_CHEST_BONE_PLUS.nii"
+Conversion required 5.874755 seconds (0.997050 for core code).
+
+Converting R01-141
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 242 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-141/ePAD_Generated_DSO_Nov-11-2211 (512x512x23x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-141/ePAD_Generated_DSO_Nov-11-2211.nii"
+Convert 241 DICOM as data/generated/NIfTI/R01-141/1.25MM_CHEST (512x512x241x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-141/1.25MM_CHEST.nii"
+Conversion required 7.677232 seconds (0.930547 for core code).
+
+Converting R01-142
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 208 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-142/ePAD_Generated_DSO_Nov-11-2220 (512x512x16x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-142/ePAD_Generated_DSO_Nov-11-2220.nii"
+Convert 207 DICOM as data/generated/NIfTI/R01-142/LUNG_2X2_B70f_VERY_SHARP (512x512x207x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-142/LUNG_2X2_B70f_VERY_SHARP.nii"
+Conversion required 6.068672 seconds (0.774773 for core code).
+
+Converting R01-144
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 266 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-144/ePAD_Generated_DSO_Nov-11-2221 (512x512x12x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-144/ePAD_Generated_DSO_Nov-11-2221.nii"
+Convert 265 DICOM as data/generated/NIfTI/R01-144/1.25MM_CHEST_BONE_PLUS (512x512x265x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-144/1.25MM_CHEST_BONE_PLUS.nii"
+Conversion required 6.293952 seconds (0.984175 for core code).
+
+Converting R01-145
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 327 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-145/ePAD_Generated_DSO_Dec-22-1433 (512x512x38x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-145/ePAD_Generated_DSO_Dec-22-1433.nii"
+Convert 326 DICOM as data/generated/NIfTI/R01-145/Chest_1.0_I70f_2 (512x512x326x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-145/Chest_1.0_I70f_2.nii"
+Conversion required 6.840256 seconds (1.339022 for core code).
+
+Converting R01-146
+Chris Rorden's dcm2niiX version v1.0.20220720  Clang13.0.1 x86-64 (64-bit MacOS)
+Found 398 DICOM file(s)
+Warning: Unable to determine manufacturer (0008,0070), so conversion is not tuned for vendor.
+Warning: Support for images that allocate 1 bits is experimental
+Convert 1 DICOM as data/generated/NIfTI/R01-146/ePAD_Generated_DSO_Dec-22-1434 (512x512x112x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-146/ePAD_Generated_DSO_Dec-22-1434.nii"
+Convert 397 DICOM as data/generated/NIfTI/R01-146/THINS (512x512x397x1)
+Compress: "/usr/local/bin/pigz" -b 960 -n -f -9 "data/generated/NIfTI/R01-146/THINS.nii"
+Conversion required 6.846713 seconds (1.507057 for core code).
