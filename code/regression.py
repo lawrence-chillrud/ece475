@@ -7,20 +7,18 @@ import pandas
 from matplotlib import ticker
 
 
-# Colums that will be used for x
+# Colums that will be used for x,y
 use_cols_x = range(1,6)
+use_cols_x = (660, 634, 231, 637, 785, 1408, 961, 105, 1132, 853, 610, 1209, 58, 576,
+ 1254, 752, 1643, 1160, 85, 783)
 use_cols_y = 24
 
-epsilon = 10 **(-2)
-alpha = 5
-itera = 1000
-sampleSize = 200
-lam = 10**(-5)
-C=10
 # import data
 x_raw_data = pandas.io.parsers.read_csv("../data/generated/NSCLC_features.csv").values
-x_data = x_raw_data[:,use_cols_x]
+x_data = x_raw_data[:,1:]
+x_data = x_data[:,use_cols_x]
 x = x_data.T
+
 y_raw_data = pandas.io.parsers.read_csv("../data/generated/NSCLC_labels.csv").values
 y_data = y_raw_data[:,use_cols_y]
 y = y_data.T
@@ -28,52 +26,47 @@ y = y_data.T
 #values that are not in x
 y=np.delete(y,118-1)
 y=np.delete(y,59-2)
-print(y)
 
 inds = np.where((y=="Wildtype") | (y == "Mutant"))
-print(x.shape)
-print(y.shape)
-x = x[:,inds]
+x = x[:,inds[0]]
 y = y[inds]
 
-exit()
-x = x.values
-y = y.values
+y[y=="Wildtype"]=-1
+y[y=="Mutant"]=1
 
-x = x.T
-y = np.array([int(v) for v in y])[np.newaxis,:]
+epsilon = 10 **(-2)
+alpha = 5
+itera = 1000
+sampleSize = 35
+lam = 10**(-5)
 
-
+size = np.size(y)
+# I hate numpy I hate numpy
+x=x.astype('float64')
+y=y.astype('float64')
+y=np.asmatrix(y)
 print("input shape = " , x.shape)
 print("output shape = ", y.shape)
 
-# sample indices
-num_sample = 50000
-inds = np.random.permutation(y.shape[1])[:num_sample]
-x = x[:,inds]
-y = y[:,inds]
-
-size = np.size(y)
-
 xmean = np.nanmean(x,axis = 1)[:,np.newaxis]
-xstd = np.nanstd(x,axis = 1)[:,np.newaxis]   
+xstd = np.nanstd(x,axis = 1)[:,np.newaxis]  
 
 idx = np.argwhere(xstd < 0.1)
 if len(idx) > 0:
-    idx = [v[0] for v in idx]
-    offset = np.zeros((xstd.shape))
-    offset[idx] = 1
-    xstd += offset
+	idx = [v[0] for v in idx]
+	offset = np.zeros((xstd.shape))
+	offset[idx] = 1
+	xstd += offset
 
 undefineds = np.argwhere(np.isnan(x) == True)
 for i in undefineds:
-    x[i[0],i[1]] = xmean[i[0]]
+	x[i[0],i[1]] = xmean[i[0]]
 
 for i in range(len(x)):
 	for j in range(size):
 		x[i][j] = (x[i][j]-xmean[i])/xstd[i]	
 
-w = 0.1*np.random.randn(784+1,C)
+w = 0.1*np.random.randn(x.shape[0]+1)
 def model(x,w):
 	a = w[0] + np.dot(x.T,w[1:])
 	return a.T
