@@ -31,7 +31,9 @@ def str_dict(d):
         s += '\t' + str(k) + ': ' + str(d[k]) + '\n'
     return s
 
-def prep_data(data_dir='data/generated/', outcome_of_interest='EGFR mutation status', scale='None'):
+def prep_data(data_dir='data/generated/', outcome_of_interest='EGFR mutation status', scale='Normalize'):
+    if scale not in ['None', 'Normalize', 'Standardize']:
+        raise Exception("Unknown scale method selected. Must be one of {'None', 'Normalize', 'Standardize'}")
     set_wd()
     dff = pd.read_csv(data_dir + 'NSCLC_features.csv')
     dfl = pd.read_csv(data_dir + 'NSCLC_labels.csv').filter(['Case ID', 'Age at Histological Diagnosis', 'Weight (lbs)', 'Gender', 'Ethnicity', 'Smoking status', 'Pack Years', outcome_of_interest])
