@@ -1,53 +1,48 @@
-import numpy as np
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-import pandas
+from sklearn.model_selection import train_test_split, GridSearchCV, RepeatedStratifiedKFold
+from sklearn.metrics import make_scorer, get_scorer_names, confusion_matrix, f1_score, balanced_accuracy_score, matthews_corrcoef, plot_confusion_matrix
+from sklearn.metrics import make_scorer, confusion_matrix, f1_score, roc_auc_score, balanced_accuracy_score, matthews_corrcoef, plot_confusion_matrix
+from sklearn.model_selection import KFold, RepeatedKFold
+from sklearn.model_selection import cross_val_score
+import pandas as pd
+from feature_selection import get_features
+from utils import prep_data
+import numpy as np
 
-# Colums that will be used for x, y
-use_cols_x = (660, 634, 231, 637, 785, 1408, 961, 105, 1132, 853, 610, 1209, 58, 576,
- 1254, 752, 1643, 1160, 85, 783)
-use_cols_y = 24
+#print(get_scorer_names())
 
-# import data
-x_raw_data = pandas.io.parsers.read_csv("../data/generated/NSCLC_features.csv").values
-x_data = x_raw_data[:,1:]
-x_data = x_data[:,use_cols_x]
-x = x_data.T
+[X_train, X_test, y_train, y_test] = prep_data()
 
-y_raw_data = pandas.io.parsers.read_csv("../data/generated/NSCLC_labels.csv").values
-y_data = y_raw_data[:,use_cols_y]
-y = y_data.T
+# Columns that will be used for x, y
+use_cols_x = []
+features = get_features(X_train,y_train,20,"distance_correlation")
+print(features)
+exit()
+for f in features:
+	use_cols_x += [f[0]]
 
-#values that are not in x
-y=np.delete(y,118-1)
-y=np.delete(y,59-2)
+X_train = X_train[use_cols_x]
+X_test = X_test[use_cols_x]
 
-inds = np.where((y=="Wildtype") | (y == "Mutant"))
-x = x[:,inds[0]]
-y = y[inds]
+scoring = {'AUC': make_scorer(roc_auc_score), 'F1': make_scorer(f1_score), 'Balanced Acc': make_scorer(balanced_accuracy_score), 'MCC': make_scorer(matthews_corrcoef)}
+cv = RepeatedStratifiedKFold(n_splits=5, n_repeats=3, random_state=1)
 
-y[y=="Wildtype"]=-1
-y[y=="Mutant"]=1
+grid={"C":[0.001,0.01,0.1,1,10], "solver":["saga"], "fit_intercept":[True,False],"class_weight":["balanced"], "l1_ratio":[0.5],"penalty":["l1","l2","none","elasticnet"]}# l1 lasso l2 ridge
+logreg=LogisticRegression()
+logreg_cv=GridSearchCV(logreg,grid, scoring=scoring,refit='AUC', cv=cv)
+logreg_cv.fit(X_train,y_train)
 
-x = x.T
-y = y.astype('int')
-print(x)
-print(y)
-
-# split data into training and test sets
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
+print("tuned hpyerparameters :(best parameters) ",logreg_cv.best_params_)
+print("accuracy :",logreg_cv.best_score_)
 
 # create a LogisticRegression object
-model = LogisticRegression()
-
-# train the model using the training data
-model.fit(X_train, y_train)
-
-# make predictions on the test data
-y_pred = model.predict(X_test)
+y_pred = logreg_cv.predict(X_test)
+#y_pred = model.predict(X_train)
+#y_test = y_train
 
 # evaluate the model performance
-from sklearn.metrics import accuracy_score
-
-acc = accuracy_score(y_test, y_pred)
-print('Accuracy: %.2f' % acc)
+print("\nConfusion matrix:\n", confusion_matrix(y_test, y_pred))
+print("\nBalanced acc: ", balanced_accuracy_score(y_test, y_pred))
+print("\nF1 score: ", f1_score(y_test, y_pred))
+print("\nMCC: ", matthews_corrcoef(y_test, y_pred))
+#hyperop, rucaoc score
