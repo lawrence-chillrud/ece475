@@ -90,31 +90,32 @@ if run_grid_search:
 # 7. Load best model resulting from gridsearch
 model = joblib.load('data/generated/models/xgboost_final.pkl')
 
-# %%
+# %% 8. Performance on validation data
+print("\nPERFORMANCE ON ARBITRARY VAL:\n")
 y_val_hat = model.predict(X_val)
 print("\nConfusion matrix:\n", confusion_matrix(y_val, y_val_hat))
 print("\nBalanced acc: ", balanced_accuracy_score(y_val, y_val_hat))
 print("\nF1 score: ", f1_score(y_val, y_val_hat))
 print("\nMCC: ", matthews_corrcoef(y_val, y_val_hat))
 
-# %%
+# %% 9. Performance on train data
+print("\nPERFORMANCE ON ARBITRARY TRAIN:\n")
 y_train_hat = model.predict(X_train)
 print("\nConfusion matrix:\n", confusion_matrix(y_train, y_train_hat))
 print("\nBalanced acc: ", balanced_accuracy_score(y_train, y_train_hat))
 print("\nF1 score: ", f1_score(y_train, y_train_hat))
 print("\nMCC: ", matthews_corrcoef(y_train, y_train_hat))
 
-# %%
+# %% 10. Performance on test
+print("\nPERFORMANCE ON THE TEST SET:\n")
 y_test_hat = model.predict(X_test)
 print("\nConfusion matrix:\n", confusion_matrix(y_test, y_test_hat))
 print("\nBalanced acc: ", balanced_accuracy_score(y_test, y_test_hat))
 print("\nF1 score: ", f1_score(y_test, y_test_hat))
 print("\nMCC: ", matthews_corrcoef(y_test, y_test_hat))
 
-# %%
-xgb.plot_importance(model, max_num_features=30)
-
-# %%
+# %% 11. Now that we have the important features, 
+# figure out how many k features should actually be selected
 thresholds = np.sort(model.feature_importances_)
 thresholds = thresholds[np.where(thresholds != 0)]
 thresholds = np.insert(thresholds, 0, 0, axis=0)
@@ -147,13 +148,16 @@ for train_index, val_index in cv.split(X_train_val, y_train_val):
         }, index = [0])
         metrics_df = pd.concat([metrics_df, metrics])
     print('Done fold')
-    #print("Thresh=%.3f, n=%d, F1-score: %.3f" % (thresh, select_X_train.shape[1], f1))
-    #print("Confusion mat:\n", confusion_matrix(y_val, y_pred))
 
-# %%
+# %% Print summary of best run's features, save for downstream use
 metrics_summary = metrics_df.groupby(['thresh'], as_index=False).mean().sort_values('AUC', ascending=False)
 best_thresh = metrics_summary['thresh'].iloc[0]
+print("\nBest stats:\n", metrics_summary.iloc[0,:])
 selection = SelectFromModel(model, threshold=best_thresh, prefit=True)
-select_X_train = selection.transform(X_train)
+best_feature_idx = selection.get_support()
+top_features = X_train_val.columns[best_feature_idx]
+top_importances = model.feature_importances_[best_feature_idx]
+top_df = pd.DataFrame({'feature': top_features, 'importance': top_importances}).sort_values('importance', ascending=False)
+top_df.to_csv('data/generated/feature_selection_output/xgboost_features.csv', index=False)
 
 # %%
