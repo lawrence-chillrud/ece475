@@ -9,8 +9,6 @@ from feature_selection import get_features
 from utils import prep_data
 import numpy as np
 
-#print(get_scorer_names())
-
 [X_train, X_test, y_train, y_test] = prep_data()
 
 # Columns that will be used for x, y
@@ -37,12 +35,9 @@ print("accuracy :",logreg_cv.best_score_)
 
 # create a LogisticRegression object
 y_pred = logreg_cv.predict(X_test)
-#y_pred = model.predict(X_train)
-#y_test = y_train
 
 # evaluate the model performance
 print("\nConfusion matrix:\n", confusion_matrix(y_test, y_pred))
 print("\nBalanced acc: ", balanced_accuracy_score(y_test, y_pred))
 print("\nF1 score: ", f1_score(y_test, y_pred))
 print("\nMCC: ", matthews_corrcoef(y_test, y_pred))
-#hyperop, rucaoc score
