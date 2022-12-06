@@ -7,6 +7,7 @@ import re
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.model_selection import train_test_split
 
 def print_prog_bar(iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
     percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
@@ -32,7 +33,7 @@ def str_dict(d):
         s += '\t' + str(k) + ': ' + str(d[k]) + '\n'
     return s
 
-def prep_data(data_dir='data/generated/', outcome_of_interest='EGFR mutation status', scale='Normalize', include_demographics=False, labels=[1, -1]):
+def prep_data(data_dir='data/generated/', outcome_of_interest='EGFR mutation status', scale='Normalize', include_demographics=False, labels=[1, -1], split=True):
     if scale not in ['None', 'Normalize', 'Standardize']:
         raise Exception("Unknown scale method selected. Must be one of {'None', 'Normalize', 'Standardize'}")
     set_wd()
@@ -59,4 +60,7 @@ def prep_data(data_dir='data/generated/', outcome_of_interest='EGFR mutation sta
     elif scale == 'Standardize':
         X = pd.DataFrame(StandardScaler().fit_transform(X), columns=X.columns)
     
-    return X, y
+    if split:
+        return train_test_split(X, y, test_size=0.25, random_state=0, stratify=y)
+    else:
+        return X, y
