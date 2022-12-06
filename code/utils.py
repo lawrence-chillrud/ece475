@@ -31,20 +31,25 @@ def str_dict(d):
         s += '\t' + str(k) + ': ' + str(d[k]) + '\n'
     return s
 
-def prep_data(data_dir='data/generated/', outcome_of_interest='EGFR mutation status', scale='Normalize'):
+def prep_data(data_dir='data/generated/', outcome_of_interest='EGFR mutation status', scale='Normalize', include_demographics=False, labels=[1, -1]):
     if scale not in ['None', 'Normalize', 'Standardize']:
         raise Exception("Unknown scale method selected. Must be one of {'None', 'Normalize', 'Standardize'}")
     set_wd()
     dff = pd.read_csv(data_dir + 'NSCLC_features.csv')
-    dfl = pd.read_csv(data_dir + 'NSCLC_labels.csv').filter(['Case ID', 'Age at Histological Diagnosis', 'Weight (lbs)', 'Gender', 'Ethnicity', 'Smoking status', 'Pack Years', outcome_of_interest])
+    dfl = pd.read_csv(data_dir + 'NSCLC_labels.csv')
+    if include_demographics:
+        dfl = dfl.filter(['Case ID', 'Age at Histological Diagnosis', 'Weight (lbs)', 'Gender', 'Ethnicity', 'Smoking status', 'Pack Years', outcome_of_interest])
+        dfl['Weight (lbs)'] = dfl['Weight (lbs)'].replace('Not Collected', float('nan'))
+        dfl['Pack Years'] = dfl['Pack Years'].replace('Not Collected', float('nan'))
+        dfl['Pack Years'] = dfl['Pack Years'].mask(dfl['Smoking status'] == 'Nonsmoker', 0)
+        dfl['Gender'] = dfl['Gender'].replace(['Male', 'Female'], [0, 1])
+        dfl['Ethnicity'] = dfl['Ethnicity'].replace(['Caucasian', 'Native Hawaiian/Pacific Islander', 'African-American', 'Asian', 'Hispanic/Latino'], [0, 1, 2, 3, 4])
+        dfl['Smoking status'] = dfl['Smoking status'].replace(['Nonsmoker', 'Former', 'Current'], [0, 1, 2])
+    else:
+        dfl = dfl.filter(['Case ID', outcome_of_interest])
+    
     dfl = dfl[dfl[outcome_of_interest] != 'Unknown']
-    dfl['Weight (lbs)'] = dfl['Weight (lbs)'].replace('Not Collected', float('nan'))
-    dfl['Pack Years'] = dfl['Pack Years'].replace('Not Collected', float('nan'))
-    dfl['Pack Years'] = dfl['Pack Years'].mask(dfl['Smoking status'] == 'Nonsmoker', 0)
-    dfl['Gender'] = dfl['Gender'].replace(['Male', 'Female'], [0, 1])
-    dfl['Ethnicity'] = dfl['Ethnicity'].replace(['Caucasian', 'Native Hawaiian/Pacific Islander', 'African-American', 'Asian', 'Hispanic/Latino'], [0, 1, 2, 3, 4])
-    dfl[outcome_of_interest] = dfl[outcome_of_interest].replace(['Mutant', 'Wildtype'], [1, -1])
-    dfl['Smoking status'] = dfl['Smoking status'].replace(['Nonsmoker', 'Former', 'Current'], [0, 1, 2])
+    dfl[outcome_of_interest] = dfl[outcome_of_interest].replace(['Mutant', 'Wildtype'], labels)
     df = pd.merge(dfl, dff, on='Case ID')
     X = df.drop(['Case ID', outcome_of_interest], axis=1)
     y = df[outcome_of_interest]
