@@ -129,5 +129,7 @@ dmypy.json
 .pyre/
 
 # Lawrence's additions:
-data/
+data/generated/
+data/TCIA/
+code/__pycache__
 *.DS_Store
