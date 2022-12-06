@@ -3,6 +3,7 @@
 # Date: 11/21/2022
 # Description: Contains some helper fuctions.
 import os
+import re
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
@@ -16,7 +17,7 @@ def print_prog_bar(iteration, total, prefix = '', suffix = '', decimals = 1, len
         print()
 
 def set_wd():
-    cwd = os.getcwd().split('/')
+    cwd = re.split('/|\\\\',os.getcwd())
     try:
         while cwd.pop() != 'ece475':
             os.chdir('..')
