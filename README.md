@@ -94,13 +94,11 @@ We extract radiomic features from the `.nii.gz` files by running the [2_extract_
 We split the dataset into training and testing data as follows:
 
 ![classsplits](results/class_splits.png)
-| Training/Validation Data Class Split |
-| ------------------------------------ |
+### Training/Validation Data Class Split 
 | \-1                                  | 69 |
 | 1                                    | 17 |
 
-| Testing Data Class Split |
-| ------------------------------------ |
+### Testing Data Class Split 
 | \-1                                  | 23 |
 | 1                                    | 6 |
 
