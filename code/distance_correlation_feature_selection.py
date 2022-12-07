@@ -14,7 +14,7 @@ with warnings.catch_warnings():
         correlations[X_train.columns[i]] = dcor.distance_correlation(X_train[X_train.columns[i]],y_train)
 top_features_indexes = sorted(correlations.items(), key=lambda item: item[1],reverse=True)
 with open('data/generated/feature_selection_output/distance_correlation_features.csv', 'w') as f:
-    f.write("feature,value\n")
+    f.write("feature,importance\n")
     for v in top_features_indexes:
         f.write("%s,%s\n"%(v[0],v[1]))
 

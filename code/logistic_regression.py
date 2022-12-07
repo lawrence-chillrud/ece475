@@ -5,17 +5,20 @@ from sklearn.metrics import make_scorer, confusion_matrix, f1_score, roc_auc_sco
 from sklearn.model_selection import KFold, RepeatedKFold
 from sklearn.model_selection import cross_val_score
 import pandas as pd
-from feature_selection import get_features
 from utils import prep_data
 import numpy as np
 
 [X_train, X_test, y_train, y_test] = prep_data()
-method = "xgboost"
+method = "distance_correlation"
 data = pd.read_csv("data/generated/feature_selection_output/"+method+"_features.csv")
-use_cols_x = data['feature'].tolist()
+
+if method!="distance_correlation":
+	use_cols_x = data['feature'].tolist()
+else:
+	use_cols_x = (data['feature'].tolist())
 
 # Columns that will be used for x, y
-X_train = X_train[use_cols_x]
+X_train = X_train[use_cols_x]      
 X_test = X_test[use_cols_x]
 
 scoring = {'AUC': make_scorer(roc_auc_score), 'F1': make_scorer(f1_score), 'Balanced Acc': make_scorer(balanced_accuracy_score), 'MCC': make_scorer(matthews_corrcoef)}
