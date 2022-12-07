@@ -87,7 +87,7 @@ for m in methods:
     print("\nF1 score: ", f1_score(y_test, y_test_hat))
     print("\nBalanced acc: ", balanced_accuracy_score(y_test, y_test_hat))
     print("\nMCC: ", matthews_corrcoef(y_test, y_test_hat))
-    tr = pd.DataFrame(train_results.sort_values('mean_test_AUC', ascending=False).loc[0,:]).T
+    tr = pd.DataFrame(train_results.sort_values('mean_test_AUC', ascending=False).iloc[0,:]).T
     train_metrics_df = pd.concat([train_metrics_df, tr])
     train_metrics_df = train_metrics_df.filter(train_metrics_df.columns[train_metrics_df.columns.str.contains('mean')])
     train_metrics_df['classifier'] = 'LDA'
