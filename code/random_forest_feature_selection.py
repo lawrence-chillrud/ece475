@@ -146,6 +146,6 @@ best_feature_idx = selection.get_support()
 top_features = X_train_val.columns[best_feature_idx]
 top_importances = model.feature_importances_[best_feature_idx]
 top_df = pd.DataFrame({'feature': top_features, 'importance': top_importances}).sort_values('importance', ascending=False)
-top_df.to_csv('data/generated/feature_selection_output/random_forest_features.csv', index=False)
+#top_df.to_csv('data/generated/feature_selection_output/random_forest_features.csv', index=False)
 
 # %%
