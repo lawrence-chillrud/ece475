@@ -91,9 +91,8 @@ We extract radiomic features from the `.nii.gz` files by running the [2_extract_
 
 ## 7. Data exploration
 
-We split the dataset into training and testing data as follows:
+We split the dataset into training and testing data based on EGFR mutation status as follows:
 
-![classsplits](results/class_splits.png)
 ### Training/Validation Data Class Split 
 | \-1 | 69 |
 | --- | -- |
