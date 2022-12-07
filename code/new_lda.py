@@ -1,11 +1,11 @@
-# File: svm.py
+# File: new_lda.py
 # Author: Lawrence Chillrud <chili@u.northwestern.edu>
 # Date: 11/30/2022
 
 # %%0. Package importants
 from sklearn.metrics import make_scorer, confusion_matrix, f1_score, roc_auc_score, balanced_accuracy_score, matthews_corrcoef, plot_confusion_matrix, classification_report, precision_score, recall_score
 from sklearn.model_selection import train_test_split, GridSearchCV, RepeatedStratifiedKFold
-from sklearn.svm import SVC
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from utils import prep_data
 import numpy as np
 import pandas as pd
@@ -18,7 +18,7 @@ methods = ['distance_correlation', 'lasso', 'xgboost', 'random_forest'] # , 'gbd
 scoring = {'AUC': make_scorer(roc_auc_score), 'F1': make_scorer(f1_score), 'Balanced Acc': make_scorer(balanced_accuracy_score), 'MCC': make_scorer(matthews_corrcoef), 'Precision': make_scorer(precision_score), 'Recall': make_scorer(recall_score)}
 cv = RepeatedStratifiedKFold(n_splits=4, n_repeats=3, random_state=1)
 
-print("SVM TRAINING AND TESTING:\n")
+print("LDA TRAINING AND TESTING:\n")
 
 # %%1. Loop through all feature selectors
 metrics_df = pd.DataFrame()
@@ -34,16 +34,10 @@ for m in methods:
     X_tv = X_train_val[features]
     X_t = X_test[features]
     
-    if f"SVM_{m}.pkl" not in os.listdir('data/generated/models/'):
-        estimator = SVC()
+    if f"LDA_{m}.pkl" not in os.listdir('data/generated/models/'):
+        estimator = LDA(solver='svd')
 
-        # 6b. Define grid of hyperparams we want to search through
-        params = {
-            'C': [0.001, 0.01, 0.1, 1, 10, 100, 1000],
-            'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
-            #'degree': [2, 3, 4, 5, 10],
-            'gamma': ['scale', 'auto']
-        }
+        params = {'n_components': np.arange(1, np.min([len(features), 100]))}
 
         # 6c. Initialize gridsearch
         gs = GridSearchCV(
@@ -69,11 +63,11 @@ for m in methods:
         results_df = pd.DataFrame().from_dict(results)
         print("\nBEST PARAMS:\n")
         print(gs.best_params_)
-        joblib.dump(gs.best_estimator_, f"data/generated/models/SVM_{m}.pkl")
-        results_df.to_csv(f"data/generated/models/SVM_{m}_results_df_final.csv", index=False)
+        joblib.dump(gs.best_estimator_, f"data/generated/models/LDA_{m}.pkl")
+        results_df.to_csv(f"data/generated/models/LDA_{m}_results_df_final.csv", index=False)
 
-    model = joblib.load(f"data/generated/models/SVM_{m}.pkl")
-    train_results = pd.read_csv(f"data/generated/models/SVM_{m}_results_df_final.csv")
+    model = joblib.load(f"data/generated/models/LDA_{m}.pkl")
+    train_results = pd.read_csv(f"data/generated/models/LDA_{m}_results_df_final.csv")
 
     # 10. Performance on test
     print("\nPERFORMANCE ON THE TEST SET:\n")
@@ -96,12 +90,12 @@ for m in methods:
     tr = pd.DataFrame(train_results.sort_values('mean_test_AUC', ascending=False).loc[0,:]).T
     train_metrics_df = pd.concat([train_metrics_df, tr])
     train_metrics_df = train_metrics_df.filter(train_metrics_df.columns[train_metrics_df.columns.str.contains('mean')])
-    train_metrics_df['classifier'] = 'SVM'
-    metrics_df['classifier'] = 'SVM'
+    train_metrics_df['classifier'] = 'LDA'
+    metrics_df['classifier'] = 'LDA'
 
 # %%
-metrics_df.to_csv('data/generated/stats/SVM_test.csv', index=False)
+metrics_df.to_csv('data/generated/stats/LDA_test.csv', index=False)
 train_metrics_df['feature_selector'] = methods
-train_metrics_df.to_csv('data/generated/stats/SVM_train.csv', index=False)
+train_metrics_df.to_csv('data/generated/stats/LDA_train.csv', index=False)
 
 # %%
