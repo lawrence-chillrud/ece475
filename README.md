@@ -1,17 +1,38 @@
 # ece475
+
+**Lawrence Chillrud** <chili@u.northwestern.edu> \
+**Christian Duffee** <christian.duffee@northwestern.edu> \
+**Charilaos Apostolidis** <j4k1n4@u.northwestern.edu>
+
 Directory for EE475 final project.
 
 **Radiogenomic machine learning (ML) for EGFR mutation status prediction from Computed Tomography (CT) scans of patients with Non-Small Cell Lung Cancer (NSCLC).**
 
 Table of contents:
-1. [Requirements](#1-requirements)
-2. [The data](#2-the-data)
-3. [Downloading the data](#3-downloading-the-data)
-4. [Converting the data](#4-converting-the-data)
-5. [Feature extraction](#5-feature-extraction)
-6. [References](#references)
+1. [Overview](#1-Overview)
+2. [Requirements](#2-requirements)
+3. [The data](#3-the-data)
+4. [Downloading the data](#4-downloading-the-data)
+5. [Converting the data](#5-converting-the-data)
+6. [Feature extraction](#6-feature-extraction)
+7. [Data exploration](#7-data-exploration)
+8. [Feature selection](#8-feature-selection)
+9. [Classification results](#9-classification-results)
+9. [References](#references)
 
-## 1. Requirements
+## 1. Overview
+
+We are using a radiogenomic machine learning pipeline to predict EGFR mutation status from Computed Tomography (CT) scans of patients with Non-Small Cell Lung Cancer (NSCLC). 
+
+EGFR mutation status, a binary characteristic in NSCLC {`Mutant`, `Wilde Type`}, is an important biomarker for NSCLC patients that correlates highly with prognosis (the EGFR mutated variant confers better prognosis). As such, it is crucial to know the EGFR mutation status of a tumor in order to determine the best treatment options available to the patient.
+
+In our project, we take the following approach to the EGFR mutation status prediction task:
+
+![pipeline](results/ml_project_abstract_2.png)
+
+This pipeline then yields 15 models total (each of the 5 feature selectors crossed with each of the 3 classification models).
+
+## 2. Requirements
 
 We provide the `environment.yml` YAML file for easy cloning of the exact conda virtual environment used to run all project scripts. With [conda](https://conda.io/projects/conda/en/latest/user-guide/install/download.html) installed, simply run the following line in `ece475` directory:
 
@@ -23,7 +44,7 @@ Then activate the newly created `rgml` environment with:
 
 You should now be able to run all scripts in the `code` folder without issue.
 
-## 2. The data
+## 3. The data
 
 The dataset we are using is The Cancer Imaging Archive's (TCIA)[^1] publicly available [NSCLC Radiogenomics dataset](https://wiki.cancerimagingarchive.net/display/Public/NSCLC+Radiogenomics), made from a cohort of 211 NSCLC patients. A brief description from the dataset's TCIA page is reproduced below:
 
@@ -31,15 +52,15 @@ The dataset we are using is The Cancer Imaging Archive's (TCIA)[^1] publicly ava
 
 We refer interested readers to Bakr et al.[^2] for further details regarding the dataset.
 
-## 3. Downloading the data
+## 4. Downloading the data
 1. Download [the .tcia manifest file](https://wiki.cancerimagingarchive.net/download/attachments/28672347/NSCLC_Radiogenomics-6-1-21%20Version%204.tcia?version=1&modificationDate=1622561925765&api=v2) (88 KB) that will be needed to later retrieve the images and their segmentations from the NCBI Data Retriever (see steps 3 and 4). We include this `.tcia` file here in the [data/TCIA/](data/TCIA/) folder incase the download link changes in the future.
 2. Download [the .csv file](https://wiki.cancerimagingarchive.net/download/attachments/28672347/NSCLCR01Radiogenomic_DATA_LABELS_2018-05-22_1500-shifted.csv?version=1&modificationDate=1531967714295&api=v2) (67 KB) providing the clinical data obtained for each patient (including each patient's EGFR mutation status). Again, we include this `.csv` here in the [data/TCIA/manifest/](data/TCIA/manifest/) folder (with the infix `DATA_LABELS`) should the download link change in the future. (Note: this clinical data `.csv` file is different from the `metadata.csv` file we also include in the same folder. The `metadata.csv` file can be obtained from scratch by following step 4 below.)
 3. Follow [these instructions](https://wiki.cancerimagingarchive.net/display/NBIA/Downloading+TCIA+Images#DownloadingTCIAImages-InstallingtheNBIADataRetriever) to install the NCBI Data Retriever application.
 4. Now open the `.tcia` manifest file downloaded in step 1 (this will open the NCBI app installed in step 3). Follow the app's prompts to download all the images and their segmentations (97.6 GB total). They will be downloaded in `.dcm` DICOM format. Detailed instructions can be found [here](https://wiki.cancerimagingarchive.net/display/NBIA/Downloading+TCIA+Images#DownloadingTCIAImages-OpeningtheManifestFileandDownloadingtheData).
 
-_Note: Because we provide all the `.csv` files needed throughout the main ML analysis in the [data/generated/](data/generated/) directory, the interested reader need only follow the above steps to download the raw DICOM files if they want to perform the conversion (section 4 below) and feature extraction (section 5 below) themselves. Otherwise, sections 3-5 in this README need not be followed computationally, and just serve as documentation for how the analysis data was prepared. The relevant files for the main analysis are [NSCLC_labels.csv](data/generated/NSCLC_labels.csv) (output by section 4) and [NSCLC_features.csv](data/generated/NSCLC_features.csv) (output by section 5)._
+_Note: Because we provide all the `.csv` files needed throughout the main ML analysis in the [data/generated/](data/generated/) directory, the interested reader need only follow the above steps to download the raw DICOM files if they want to perform the conversion (section 5 below) and feature extraction (section 6 below) themselves. Otherwise, sections 4-6 in this README need not be followed computationally, and just serve as documentation for how the analysis data was prepared. The relevant files for the main analysis are [NSCLC_labels.csv](data/generated/NSCLC_labels.csv) (output by section 5) and [NSCLC_features.csv](data/generated/NSCLC_features.csv) (output by section 6)._
 
-## 4. Converting the data
+## 5. Converting the data
 In order to make the data smaller and easier to work with, we must convert all downloaded CT scans and their accompanying segmentations from their raw DICOM `.dcm` format to a compressed NIfTI `.nii.gz` format. Interested readers can study [this useful DICOM and NIfTI Primer post](https://github.com/DataCurationNetwork/data-primers/blob/master/Neuroimaging%20DICOM%20and%20NIfTI%20Data%20Curation%20Primer/neuroimaging-dicom-and-nifti-data-curation-primer.md) for the differences between the two file types.
 
 There are many tools for converting `.dcm` -> `.nii.gz`; the software we choose to employ is `dcm2niix`[^3]. Documentation for `dcm2niix` can be found [here](https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage).
@@ -54,7 +75,7 @@ There are many tools for converting `.dcm` -> `.nii.gz`; the software we choose 
 
 We convert all CT scans and segmentations to `.nii.gz` files by running the [1_convert_dcms.py](code/1_convert_dcms.py) script, which utilizes `dcm2niix` under the hood. This script also outputs the [NSCLC_labels.csv](data/generated/NSCLC_labels.csv) file.
 
-## 5. Feature extraction
+## 6. Feature extraction
 
 Now that we have downloaded the data and converted it into the appropriate format, we can extract features from the CT scans and their segmentations using the `pyradiomics` python package[^4]. Documentation for `pyradiomics` is extensive and can be found [here](https://pyradiomics.readthedocs.io/en/latest/index.html#).
 
@@ -65,6 +86,12 @@ Now that we have downloaded the data and converted it into the appropriate forma
 -->
 
 We extract radiomic features from the `.nii.gz` files by running the [2_extract_features.py](code/2_extract_features.py) script. This script outputs the [NSCLC_features.csv](data/generated/NSCLC_features.csv), which (together with [NSCLC_labels.csv](data/generated/NSCLC_labels.csv)) can be used for downstream ML tasks.
+
+## 7. Data exploration
+
+## 8. Feature selection
+
+## 9. Classification results
 
 ## References
 
