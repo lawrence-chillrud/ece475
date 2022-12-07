@@ -76,8 +76,9 @@ for m in methods:
     print("\nPERFORMANCE ON THE TEST SET:\n")
     y_test_hat = model.predict(X_t)
     print("\nConfusion matrix:\n", confusion_matrix(y_test, y_test_hat))
-    print("\nBalanced acc: ", balanced_accuracy_score(y_test, y_test_hat))
+    print("\nAUC: ", roc_auc_score(y_test, y_test_hat))
     print("\nF1 score: ", f1_score(y_test, y_test_hat))
+    print("\nBalanced acc: ", balanced_accuracy_score(y_test, y_test_hat))
     print("\nMCC: ", matthews_corrcoef(y_test, y_test_hat))
     print(classification_report(y_test, y_test_hat))
 # %%
