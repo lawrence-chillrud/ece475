@@ -119,7 +119,21 @@ Five feature selecion algorithms were used to find the most descriptive features
 
 Final classification results on all 15 models (validation and test):
 
-![The main results](results/results.png)
+|                     |                      |       |       | Validation |           |        |  |       |       | Test   |           |        |
+|---------------------|----------------------|-------|-------|------------|-----------|--------|--|-------|-------|--------|-----------|--------|
+| Classifier          | Feature Selector     | AUC   | F1    | MCC        | Precision | Recall |  | AUC   | F1    | MCC    | Precision | Recall |
+| Logistic Regression | Distance Correlation | 0.680 | 0.455 | 0.312      | 0.384     | 0.592  |  | 0.601 | 0.364 | 0.218  | 0.400     | 0.333  |
+|                     | Lasso                | 0.780 | 0.570 | 0.472      | 0.459     | 0.792  |  | 0.453 | 0.154 | -0.089 | 0.143     | 0.167  |
+|                     | Xgboost              | 0.694 | 0.470 | 0.324      | 0.367     | 0.688  |  | 0.663 | 0.462 | 0.309  | 0.429     | 0.500  |
+|                     | Random Forest        | 0.738 | 0.531 | 0.407      | 0.433     | 0.708  |  | 0.558 | 0.308 | 0.110  | 0.286     | 0.333  |
+| SVM                 | Distance Correlation | 0.543 | 0.262 | 0.099      | 0.300     | 0.258  |  | 0.598 | 0.375 | 0.167  | 0.300     | 0.500  |
+|                     | Lasso                | 0.694 | 0.485 | 0.382      | 0.498     | 0.513  |  | 0.435 | 0.000 | -0.173 | 0.000     | 0.000  |
+|                     | **Xgboost**              | 0.574 | 0.309 | 0.130      | 0.279     | 0.379  |  | **0.703** | **0.500** | **0.346**  | 0.400     | 0.667  |
+|                     | Random Forest        | 0.644 | 0.433 | 0.326      | 0.526     | 0.404  |  | 0.540 | 0.222 | 0.106  | 0.333     | 0.167  |
+| LDA                 | Distance Correlation | 0.546 | 0.256 | 0.084      | 0.257     | 0.283  |  | 0.598 | 0.375 | 0.167  | 0.300     | 0.500  |
+|                     | Lasso                | 0.630 | 0.374 | 0.239      | 0.364     | 0.438  |  | 0.457 | 0.000 | -0.139 | 0.000     | 0.000  |
+|                     | Xgboost              | 0.487 | 0.191 | -0.033     | 0.156     | 0.258  |  | 0.601 | 0.364 | 0.218  | 0.400     | 0.333  |
+|                     | Random Forest        | 0.514 | 0.140 | 0.046      | 0.250     | 0.100  |  | 0.500 | 0.000 | 0.000  | 0.000     | 0.000  |
 
 This table shows various metrics describing the accuracites achieved for each classifier and feature selection algorithm pairs. The best validation result was achieved by usign a logistic regression with a lasso feature selector. The best testing result was achieved by using
  an SVM with an XGBoost feature selector.
