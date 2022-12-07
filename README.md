@@ -10,6 +10,8 @@ Directory for EE475 final project.
 
 LINK TO THIS REPOSITORY (please view online): https://github.com/lawrence-chillrud/ece475 
 
+LINK TO PROJECT YOUTUBE VIDEO: https://youtu.be/L6dXzu2up7k
+
 Table of contents:
 1. [Overview](#1-Overview)
 2. [Requirements](#2-requirements)
