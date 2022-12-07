@@ -8,7 +8,7 @@ Directory for EE475 final project.
 
 **Radiogenomic machine learning (ML) for EGFR mutation status prediction from Computed Tomography (CT) scans of patients with Non-Small Cell Lung Cancer (NSCLC).**
 
-LINK TO THIS REPOSITORY: https://github.com/lawrence-chillrud/ece475
+LINK TO THIS REPOSITORY (please view online): https://github.com/lawrence-chillrud/ece475 
 
 Table of contents:
 1. [Overview](#1-Overview)
@@ -121,7 +121,8 @@ Final classification results on all 15 models (validation and test):
 
 ![The main results](results/results.png)
 
-This table shows various metrics describing the accuracites achieved for each classifier and feature selection algorithm pairs. The best validation result was achieved by usign a logistic regression with a lasso feature selector. The best testing result was achieved by using an SVM with an XGBoost feature selector.
+This table shows various metrics describing the accuracites achieved for each classifier and feature selection algorithm pairs. The best validation result was achieved by usign a logistic regression with a lasso feature selector. The best testing result was achieved by using
+ an SVM with an XGBoost feature selector.
 
 ## References
 
