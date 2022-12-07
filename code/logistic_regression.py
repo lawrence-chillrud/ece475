@@ -10,16 +10,11 @@ from utils import prep_data
 import numpy as np
 
 [X_train, X_test, y_train, y_test] = prep_data()
-data = read_csv("company_sales_data.csv")
+method = "lasso"
+data = pd.read_csv("data/generated/feature_selection_output/"+method+"_features.csv")
+use_cols_x = data['feature'].tolist()
 
 # Columns that will be used for x, y
-use_cols_x = []
-features = get_features(X_train,y_train,20,"distance_correlation")
-print(features)
-exit()
-for f in features:
-	use_cols_x += [f[0]]
-
 X_train = X_train[use_cols_x]
 X_test = X_test[use_cols_x]
 
