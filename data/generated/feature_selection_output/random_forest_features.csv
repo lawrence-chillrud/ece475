@@ -1,0 +1,4 @@
+feature,importance
+lbp-3D-k_glcm_ClusterTendency,0.014227525763979228
+wavelet-LHH_gldm_DependenceEntropy,0.009491000737328826
+lbp-3D-k_glcm_JointEntropy,0.009073104176944439
