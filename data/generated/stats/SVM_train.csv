@@ -1,0 +1,5 @@
+mean_fit_time,mean_score_time,mean_test_AUC,mean_train_AUC,mean_test_F1,mean_train_F1,mean_test_Balanced Acc,mean_train_Balanced Acc,mean_test_MCC,mean_train_MCC,classifier,feature_selector
+0.0687301754951477,0.0934230883916219,0.5,0.5,0.0,0.0,0.5,0.5,0.0,0.0,SVM,distance_correlation
+0.0052140355110168,0.0073900620142618,0.5,0.5,0.0,0.0,0.5,0.5,0.0,0.0,SVM,lasso
+0.0163759390513102,0.0618284940719604,0.5,0.5,0.0,0.0,0.5,0.5,0.0,0.0,SVM,xgboost
+0.0046930114428202,0.0104554295539855,0.5,0.5,0.0,0.0,0.5,0.5,0.0,0.0,SVM,random_forest
