@@ -43,10 +43,10 @@ for m in methods:
 	results_df = pd.DataFrame().from_dict(results)
 	print("\nBEST PARAMS:\n")
 	print(logreg_cv.best_params_)
-	joblib.dump(logreg_cv.best_estimator_, f"data/generated/models/SVM_{m}.pkl")
-	results_df.to_csv(f"data/generated/models/SVM_{m}_results_df_final.csv", index=False)
+	joblib.dump(logreg_cv.best_estimator_, f"data/generated/models/logistic_regression_{m}.pkl")
+	results_df.to_csv(f"data/generated/models/logistic_regression_{m}_results_df_final.csv", index=False)
 
-	train_results = pd.read_csv(f"data/generated/models/SVM_{m}_results_df_final.csv")
+	train_results = pd.read_csv(f"data/generated/models/logistic_regression_{m}_results_df_final.csv")
 
 	# 10. Performance on test
 	print("\nPERFORMANCE ON THE TEST SET:\n")
