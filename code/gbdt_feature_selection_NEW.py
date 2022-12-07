@@ -1,4 +1,4 @@
-# Import libraries
+# %%Import libraries
 import numpy as np
 import pandas as pd
 import joblib
@@ -100,9 +100,12 @@ print("\nMCC: ", matthews_corrcoef(y_train, y_train_hat))
 thresholds = np.sort(model.feature_importances_)
 thresholds = thresholds[np.where(thresholds != 0)]
 thresholds = np.insert(thresholds, 0, 0, axis=0)
+thresholds = thresholds[-30:]
 metrics_df = pd.DataFrame()
 X_train_val = X_train_val.reset_index(drop=True)
 y_train_val = y_train_val.reset_index(drop=True)
+cv = RepeatedStratifiedKFold(n_splits=4, n_repeats=1, random_state=1)
+
 for train_index, val_index in cv.split(X_train_val, y_train_val):
     X_train, X_val = X_train_val.iloc[train_index, :], X_train_val.iloc[val_index, :]
     y_train, y_val = y_train_val[train_index], y_train_val[val_index]
