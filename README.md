@@ -8,6 +8,8 @@ Directory for EE475 final project.
 
 **Radiogenomic machine learning (ML) for EGFR mutation status prediction from Computed Tomography (CT) scans of patients with Non-Small Cell Lung Cancer (NSCLC).**
 
+LINK TO THIS REPOSITORY: https://github.com/lawrence-chillrud/ece475
+
 Table of contents:
 1. [Overview](#1-Overview)
 2. [Requirements](#2-requirements)
@@ -89,24 +91,38 @@ We extract radiomic features from the `.nii.gz` files by running the [2_extract_
 
 ## 7. Data exploration
 
+See the [code/3\_visualize\_features.py](code/3_visualize_features.py) file for code used to generate these plots.
+
+Some characteristics about the data:
+
+![hists](results/demographics_hists.png)
+
+We split the dataset into training and testing data as follows:
+
+![classsplits](results/class_splits.png)
+
+We first visualize some of the features to see how they are distributed
+
+![histsfeatures](results/random_features_hists.png)
+
+Not all of them are normally distributed, so we decide to normalize them rather than standardize (see the `prep_data()` function in [code/utils.py](code/utils.py)).
+
 ## 8. Feature selection
 
+Five feature selecion algorithms were used to find the most descriptive features using a grid search over possible hyperparameters. These algorithms are distance correlation, lasso, random forest, xgboost, and gradient boosted decision trees. Only the first four were ran due to time constraints with re: exhaustive gridsearches. Furthermore, due to the nature of the algorithms, xgboost, random forest, and lasso allowed an additional search to determine how many of the top features should be included in the model.
+![Distance Correlation Features](results/distance_correlation_features.png)
+![Lasso Features](results/lasso_features.png)
+![Random Forest](results/random_forest_features.png)
+![Xgboost](results/xgboost_features.png)
+
 ## 9. Classification results
-|                     |                      |       |       | Validation |           |        |  |       |       | Test   |           |        |
-|---------------------|----------------------|-------|-------|------------|-----------|--------|--|-------|-------|--------|-----------|--------|
-| Classifier          | Feature Selector     | AUC   | F1    | MCC        | Precision | Recall |  | AUC   | F1    | MCC    | Precision | Recall |
-| Logistic Regression | Distance Correlation | 0.680 | 0.455 | 0.312      | 0.384     | 0.592  |  | 0.601 | 0.364 | 0.218  | 0.400     | 0.333  |
-|                     | Lasso                | 0.780 | 0.570 | 0.472      | 0.459     | 0.792  |  | 0.453 | 0.154 | -0.089 | 0.143     | 0.167  |
-|                     | Xgboost              | 0.694 | 0.470 | 0.324      | 0.367     | 0.688  |  | 0.663 | 0.462 | 0.309  | 0.429     | 0.500  |
-|                     | Random Forest        | 0.738 | 0.531 | 0.407      | 0.433     | 0.708  |  | 0.558 | 0.308 | 0.110  | 0.286     | 0.333  |
-| SVM                 | Distance Correlation | 0.543 | 0.262 | 0.099      | 0.300     | 0.258  |  | 0.598 | 0.375 | 0.167  | 0.300     | 0.500  |
-|                     | Lasso                | 0.694 | 0.485 | 0.382      | 0.498     | 0.513  |  | 0.435 | 0.000 | -0.173 | 0.000     | 0.000  |
-|                     | Xgboost              | 0.574 | 0.309 | 0.130      | 0.279     | 0.379  |  | 0.703 | 0.500 | 0.346  | 0.400     | 0.667  |
-|                     | Random Forest        | 0.644 | 0.433 | 0.326      | 0.526     | 0.404  |  | 0.540 | 0.222 | 0.106  | 0.333     | 0.167  |
-| LDA                 | Distance Correlation | 0.546 | 0.256 | 0.084      | 0.257     | 0.283  |  | 0.598 | 0.375 | 0.167  | 0.300     | 0.500  |
-|                     | Lasso                | 0.630 | 0.374 | 0.239      | 0.364     | 0.438  |  | 0.457 | 0.000 | -0.139 | 0.000     | 0.000  |
-|                     | Xgboost              | 0.487 | 0.191 | -0.033     | 0.156     | 0.258  |  | 0.601 | 0.364 | 0.218  | 0.400     | 0.333  |
-|                     | Random Forest        | 0.514 | 0.140 | 0.046      | 0.250     | 0.100  |  | 0.500 | 0.000 | 0.000  | 0.000     | 0.000  |
+
+Final classification results on all 15 models (validation and test):
+
+![The main results](results/results.png)
+
+This table shows various metrics describing the accuracites achieved for each classifier and feature selection algorithm pairs. The best validation result was achieved by usign a logistic regression with a lasso feature selector. The best testing result was achieved by using an SVM with an XGBoost feature selector.
+
 ## References
 
 [^1]: Clark K, Vendt B, Smith K, Freymann J, Kirby J, Koppel P, Moore S, Phillips S, Maffitt D, Pringle M, Tarbox L, Prior F. [The Cancer Imaging Archive (TCIA): Maintaining and Operating a Public Information Repository](https://doi.org/10.1007/s10278-013-9622-7). _Journal of Digital Imaging_, Volume 26, Number 6, December, 2013, pp 1045-1057.  
