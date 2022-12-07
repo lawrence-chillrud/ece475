@@ -91,17 +91,20 @@ We extract radiomic features from the `.nii.gz` files by running the [2_extract_
 
 ## 7. Data exploration
 
-See the [code/3\_visualize\_features.py](code/3_visualize_features.py) file for code used to generate these plots.
-
-Some characteristics about the data:
-
-![hists](results/demographics_hists.png)
-
 We split the dataset into training and testing data as follows:
 
 ![classsplits](results/class_splits.png)
+| Training/Validation Data Class Split |
+| ------------------------------------ |
+| \-1                                  | 69 |
+| 1                                    | 17 |
 
-We first visualize some of the features to see how they are distributed
+| Testing Data Class Split |
+| ------------------------------------ |
+| \-1                                  | 23 |
+| 1                                    | 6 |
+
+See the [code/3\_visualize\_features.py](code/3_visualize_features.py) file for code used to generate these plots. Visuallzing some of the features we get
 
 ![histsfeatures](results/random_features_hists.png)
 
@@ -109,7 +112,7 @@ Not all of them are normally distributed, so we decide to normalize them rather 
 
 ## 8. Feature selection
 
-Five feature selecion algorithms were used to find the most descriptive features using a grid search over possible hyperparameters. These algorithms are distance correlation, lasso, random forest, xgboost, and gradient boosted decision trees. Only the first four were ran due to time constraints with re: exhaustive gridsearches. Furthermore, due to the nature of the algorithms, xgboost, random forest, and lasso allowed an additional search to determine how many of the top features should be included in the model.
+Five feature selection algorithms were used to find the most descriptive features using a grid search over possible hyperparameters. These algorithms are distance correlation, lasso, random forest, xgboost, and gradient boosted decision trees. Only the first four were run due to time constraints with re: exhaustive gridsearches. Furthermore, due to the nature of the algorithms, xgboost, random forest, and lasso allowed an additional search to determine how many of the top features should be included in the model.
 ![Distance Correlation Features](results/distance_correlation_features.png)
 ![Lasso Features](results/lasso_features.png)
 ![Random Forest](results/random_forest_features.png)
