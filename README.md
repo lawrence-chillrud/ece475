@@ -95,12 +95,14 @@ We split the dataset into training and testing data as follows:
 
 ![classsplits](results/class_splits.png)
 ### Training/Validation Data Class Split 
-| \-1                                  | 69 |
-| 1                                    | 17 |
+| \-1 | 69 |
+| --- | -- |
+| 1   | 17 |
 
 ### Testing Data Class Split 
-| \-1                                  | 23 |
-| 1                                    | 6 |
+| \-1 | 23 |
+| --- | -- |
+| 1   | 6 |
 
 See the [code/3\_visualize\_features.py](code/3_visualize_features.py) file for code used to generate these plots. Visuallzing some of the features we get
 
